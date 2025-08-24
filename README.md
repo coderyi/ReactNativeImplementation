@@ -20,10 +20,13 @@
   - [metro](http://coderyi.com/ReactNativeImplementation/article/metro/metro.html)
   - [cli](http://coderyi.com/ReactNativeImplementation/article/cli/cli.html)
   - [sourcemap](http://coderyi.com/ReactNativeImplementation/article/sourcemap/sourcemap.html)
-- 第三章 ReactNative的API和组件
+- 第三章 ReactNative的渲染层
+  - [ReactNative的View](http://coderyi.com/ReactNativeImplementation/article/view/view.html)
+  - [渲染器](http://coderyi.com/ReactNativeImplementation/article/render/render.html)
+- 第四章 ReactNative的API和组件
   - [RCTNetwork](http://coderyi.com/ReactNativeImplementation/article/RCTNetwork/RCTNetwork.html)
   - [VirtualizedList](http://coderyi.com/ReactNativeImplementation/article/VirtualizedList/VirtualizedList.html)
-- 第四章 常见的三方库
+- 第五章 常见的三方库
   - [CRN](http://coderyi.com/ReactNativeImplementation/article/CRN/CRN.html)
   - [RecyclerListView和FlashList](http://coderyi.com/ReactNativeImplementation/article/FlashList/FlashList.html)
 
