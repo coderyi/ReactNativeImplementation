@@ -30,3 +30,6 @@
   - [CRN](http://coderyi.com/ReactNativeImplementation/article/CRN/CRN.html)
   - [RecyclerListView和FlashList](http://coderyi.com/ReactNativeImplementation/article/FlashList/FlashList.html)
 
+笔者建了一个交流群，欢迎大家交流ReactNative相关的技术内容。
+
+<img src= "./image/img.jpg" width="25%" />
