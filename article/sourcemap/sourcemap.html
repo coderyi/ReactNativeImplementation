@@ -1,0 +1,769 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>sourcemap · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../cli/cli.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ReactNative框架的设计与实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章 ReactNative的运行时
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../bundle/bundle.html">
+            
+                <a href="../bundle/bundle.html">
+            
+                    
+                    Native运行时Bundle处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../API/API.html">
+            
+                <a href="../API/API.html">
+            
+                    
+                    Native API的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html">
+            
+                    
+                    Bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../JSI/JSI.html">
+            
+                <a href="../JSI/JSI.html">
+            
+                    
+                    JSI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../AppRegistry/AppRegistry.html">
+            
+                <a href="../AppRegistry/AppRegistry.html">
+            
+                    
+                    JS侧的AppRegistry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../timer/timer.html">
+            
+                <a href="../timer/timer.html">
+            
+                    
+                    Timer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../interaction/interaction.html">
+            
+                <a href="../interaction/interaction.html">
+            
+                    
+                    Interaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第二章 ReactNative的包
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../metro/metro.html">
+            
+                <a href="../metro/metro.html">
+            
+                    
+                    metro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../cli/cli.html">
+            
+                <a href="../cli/cli.html">
+            
+                    
+                    cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="sourcemap.html">
+            
+                <a href="sourcemap.html">
+            
+                    
+                    sourcemap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章 ReactNative的渲染层
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../view/view.html">
+            
+                <a href="../view/view.html">
+            
+                    
+                    ReactNative的View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../render/render.html">
+            
+                <a href="../render/render.html">
+            
+                    
+                    渲染器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第四章 ReactNative的API和组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../RCTNetwork/RCTNetwork.html">
+            
+                <a href="../RCTNetwork/RCTNetwork.html">
+            
+                    
+                    RCTNetwork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../VirtualizedList/VirtualizedList.html">
+            
+                <a href="../VirtualizedList/VirtualizedList.html">
+            
+                    
+                    VirtualizedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第五章 常见的三方库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../CRN/CRN.html">
+            
+                <a href="../CRN/CRN.html">
+            
+                    
+                    CRN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../FlashList/FlashList.html">
+            
+                <a href="../FlashList/FlashList.html">
+            
+                    
+                    RecyclerListView和FlashList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >sourcemap</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sourcemap">sourcemap</h1>
+<p>metro v0.66.2
+react-native-community/cli v6.4.0
+mozilla/source-map 0.5.7</p>
+<h2 id="source-map&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x751F;&#x4EA7;&#x4E0E;&#x89E3;&#x6790;">source-map&#x7684;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x751F;&#x4EA7;&#x4E0E;&#x89E3;&#x6790;</h2>
+<h3 id="bundle">bundle</h3>
+<h4 id="&#x6253;&#x5305;">&#x6253;&#x5305;</h4>
+<pre><code>npx react-native bundle --entry-file index.js --platform ios --dev false --bundle-output RNBundle/index.ios.bundle --assets-dest RNBundle/ --sourcemap-output RNBundle/index.ios.bundle.map --verbose
+</code></pre><h4 id="metro-symbolicate&#x89E3;&#x6790;bundle">metro-symbolicate&#x89E3;&#x6790;bundle</h4>
+<pre><code>export default class TestClass {
+  testFunc() {
+    a = a + 1;
+    console.log(&apos;hello&apos;);
+    let b = b + 1;
+  }
+}
+</code></pre><p>sourcemap&#x89E3;&#x6790;&#x547D;&#x4EE4;
+npx metro-symbolicate ./index.bundle.map &lt; ./track.js</p>
+<p>track.js&#x6587;&#x4EF6;&#x662F;crash&#x7684;&#x5806;&#x6808;</p>
+<pre><code>ReferenceError: Property &apos;a&apos; doesn&apos;t exist, js engine: hermes
+
+value
+    index.ios.bundle:420:242
+anonymous
+    index.ios.bundle:6:179
+h
+    index.ios.bundle:2:1585
+d
+    index.ios.bundle:2:958
+o
+    index.ios.bundle:2:496
+global
+    index.ios.bundle:423:3
+</code></pre><h4 id="mozillasource-map&#x89E3;&#x6790;bundle">mozilla/source-map&#x89E3;&#x6790;bundle</h4>
+<p>&#x6700;&#x7EC8;&#x7684;&#x8C03;&#x7528;&#x7684;&#x662F;source-map&#x76F8;&#x5173;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x4E0B;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</p>
+<pre><code>
+const sourceMap = require(&apos;source-map&apos;);
+const fs = require(&apos;fs&apos;);
+
+/**
+ * &#x5F02;&#x6B65;&#x89E3;&#x6790;&#x884C;&#x3001;&#x5217;&#x5BF9;&#x5E94;&#x7684;&#x51FD;&#x6570;&#x4FE1;&#x606F;
+ * @param {number} line  &#x884C;
+ * @param {number} column &#x5217;
+ * @returns Promise
+ */
+const asyncSymbolicate = async (line = 0, column = 0) =&gt; {
+    return new Promise((resolve, reject) =&gt; {
+        if (line &lt; 0 || column &lt; 0) {
+            reject(&apos;invalid params&apos;);
+            return;
+        }
+        fs.readFile(&apos;./index.bundle.map&apos;, &apos;utf8&apos;, (err, data) =&gt; {
+            if (err) {
+                reject(err);
+            } else {
+                const smc = new sourceMap.SourceMapConsumer(data);
+                smc.then(consumer =&gt; {
+                    console.log(&apos;line&apos;+line)
+                    const info = consumer.originalPositionFor({
+                        line: line,
+                        column: column
+                    });
+                    console.log(&apos;info&apos;+JSON.stringify(info))
+                    resolve(info);
+                }).catch(err =&gt; {
+                    reject(err);
+                });
+            }
+        });
+    });
+};
+</code></pre><p>&#x6D4B;&#x8BD5;&#x4E00;&#x4E2A;crash&#xFF0C;&#x53D8;&#x91CF;a&#x672A;&#x5B9A;&#x4E49;</p>
+<pre><code>a = a + 1
+</code></pre><p>&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;,&#x5206;&#x522B;&#x8868;&#x793A;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3001;&#x884C;&#x3001;&#x5217;</p>
+<pre><code>index.ios.bundle:420:296
+</code></pre><p>&#x8F93;&#x51FA;</p>
+<pre><code>{
+  source: &apos;/AwesomeProject/awesomeproject/test.js&apos;,
+  line: 3,
+  column: 4,
+  name: &apos;a&apos;
+}
+</code></pre><h3 id="hermes-&#x89E3;&#x6790;">hermes &#x89E3;&#x6790;</h3>
+<p>&#x82E5;hermes&#x4EA7;&#x7269;&#x542B; sourcemap&#xFF0C; &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;react-native&#x6253;&#x5305;&#x51FA;&#x6765;&#x7684;sourcemap&#x8FDB;&#x884C;&#x89E3;&#x6790;&#xFF0C;&#x65B9;&#x5F0F;&#x8DDF;&#x6E90;&#x7801;&#x5305;&#x4E00;&#x6837;&#x3002;</p>
+<h4 id="hermes-source-map&#x5265;&#x79BB;">hermes source map&#x5265;&#x79BB;</h4>
+<p>&#x82E5;hermes &#x6253;&#x5305;&#x65F6;&#x9009;&#x62E9;-output-source-map &#x5219; sourcemap&#x4F1A;&#x4ECE;hermes&#x5305;&#x5185;&#x5265;&#x79BB;&#xFF0C;&#x51CF;&#x5C11;hermes&#x5305;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x4F46;&#x89E3;&#x6790;&#x524D;&#x8981;&#x5148;&#x5408;&#x5E76;sourcemap</p>
+<p>&#x9996;&#x5148;&#x57FA;&#x4E8E;&#x6E90;&#x7801;&#x6253;&#x5305;&#x540E;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FDB;&#x884C;hermes&#x6253;&#x5305;</p>
+<pre><code>  ./node_modules/hermes-engine/osx-bin/hermesc -emit-binary -out BCRNBundle/temp/index.ios.bundle BCRNBundle/index.ios.bundle -output-source-map
+</code></pre><p>BCRNBundle/index.ios.bundle&#x4E3A;&#x6E90;&#x7801;&#x5305;&#x8DEF;&#x5F84;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x540E;&#x5728;temp&#x76EE;&#x5F55;&#x4E0B;&#x4EA7;&#x751F;&#x65B0;&#x7684;index.ios.bundle&#x548C;map&#x6587;&#x4EF6;</p>
+<p>&#x7136;&#x540E;&#x8FDB;&#x884C;sourcemap&#x5408;&#x5E76;</p>
+<pre><code>  node ./node_modules/react-native/scripts/compose-source-maps.js RNBundle/index.ios.bundle.map BCRNBundle/hbc/index.ios.bundle.map -o BCRNBundle/index.ios.bundle.map
+</code></pre><p>&#x89E3;&#x6790;&#x65B9;&#x5F0F;&#x540C;&#x6E90;&#x7801;&#x89E3;&#x6790;</p>
+<p>&#x53C2;&#x8003;&#x6587;&#x6863;
+<a href="https://reactnative.cn/docs/symbolication" target="_blank">https://reactnative.cn/docs/symbolication</a></p>
+<h3 id="ram-bundle&#x6253;&#x5305;">ram-bundle&#x6253;&#x5305;</h3>
+<pre><code>npx react-native ram-bundle --platform ios --dev true --entry-file index.js  --bundle-output  release/ios/RNBundle/index.ios.bundle  --assets-dest release/ios/RNBundle --sourcemap-output release/ios/ios-release.bundle.map
+</code></pre><p>crash &#x5806;&#x6808;</p>
+<pre><code>516.js:15:13
+</code></pre><p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;metro-symbolicate&#x89E3;&#x6790;crash</p>
+<h2 id="metro-source-map">metro-source-map</h2>
+<h3 id="source-map-&#x751F;&#x6210;">source map &#x751F;&#x6210;</h3>
+<pre><code class="lang-javascript">describe(<span class="hljs-string">&apos;build map from raw mappings&apos;</span>, () =&gt; {
+  it(<span class="hljs-string">&apos;returns a `Generator` instance&apos;</span>, () =&gt; {
+    expect(fromRawMappings([])).toBeInstanceOf(Generator);
+  });
+
+  it(<span class="hljs-string">&apos;returns a working source map containing all mappings&apos;</span>, () =&gt; {
+    <span class="hljs-keyword">const</span> input = [
+      {
+        code: lines(<span class="hljs-number">11</span>),
+        functionMap: {names: [<span class="hljs-string">&apos;&lt;global&gt;&apos;</span>], mappings: <span class="hljs-string">&apos;AAA&apos;</span>},
+        map: [
+          [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>],
+          [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-string">&apos;apples&apos;</span>],
+          [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>],
+          [<span class="hljs-number">11</span>, <span class="hljs-number">12</span>, <span class="hljs-number">13</span>, <span class="hljs-number">14</span>, <span class="hljs-string">&apos;pears&apos;</span>],
+        ],
+        source: <span class="hljs-string">&apos;code1&apos;</span>,
+        path: <span class="hljs-string">&apos;path1&apos;</span>,
+      },
+      {
+        code: lines(<span class="hljs-number">3</span>),
+        functionMap: {names: [<span class="hljs-string">&apos;&lt;global&gt;&apos;</span>], mappings: <span class="hljs-string">&apos;AAA&apos;</span>},
+        map: [
+          [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>],
+          [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-string">&apos;bananas&apos;</span>],
+        ],
+        source: <span class="hljs-string">&apos;code2&apos;</span>,
+        path: <span class="hljs-string">&apos;path2&apos;</span>,
+      },
+      {
+        code: lines(<span class="hljs-number">23</span>),
+        functionMap: <span class="hljs-literal">null</span>,
+        map: [
+          [<span class="hljs-number">11</span>, <span class="hljs-number">12</span>],
+          [<span class="hljs-number">13</span>, <span class="hljs-number">14</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-string">&apos;bananas&apos;</span>],
+          [<span class="hljs-number">17</span>, <span class="hljs-number">18</span>, <span class="hljs-number">19</span>, <span class="hljs-number">110</span>],
+          [<span class="hljs-number">21</span>, <span class="hljs-number">112</span>, <span class="hljs-number">113</span>, <span class="hljs-number">114</span>, <span class="hljs-string">&apos;pears&apos;</span>],
+        ],
+        source: <span class="hljs-string">&apos;code3&apos;</span>,
+        path: <span class="hljs-string">&apos;path3&apos;</span>,
+      },
+    ];
+
+    expect(fromRawMappings(input).toMap()).toEqual({
+      mappings:
+        <span class="hljs-string">&apos;E;;IAIMA;;;;QAII;;;;YAIIC;E;;ICEEC;;;;;;;;;;;Y;;cCAAA;;;;kBAI8F;;;;gHA8FID&apos;</span>,
+      names: [<span class="hljs-string">&apos;apples&apos;</span>, <span class="hljs-string">&apos;pears&apos;</span>, <span class="hljs-string">&apos;bananas&apos;</span>],
+      sources: [<span class="hljs-string">&apos;path1&apos;</span>, <span class="hljs-string">&apos;path2&apos;</span>, <span class="hljs-string">&apos;path3&apos;</span>],
+      sourcesContent: [<span class="hljs-string">&apos;code1&apos;</span>, <span class="hljs-string">&apos;code2&apos;</span>, <span class="hljs-string">&apos;code3&apos;</span>],
+      x_facebook_sources: [
+        [{names: [<span class="hljs-string">&apos;&lt;global&gt;&apos;</span>], mappings: <span class="hljs-string">&apos;AAA&apos;</span>}],
+        [{names: [<span class="hljs-string">&apos;&lt;global&gt;&apos;</span>], mappings: <span class="hljs-string">&apos;AAA&apos;</span>}],
+        <span class="hljs-literal">null</span>,
+      ],
+      version: <span class="hljs-number">3</span>,
+    });
+  });
+</code></pre>
+<p>&#x4ECE;&#x539F;&#x59CB;&#x7684;map&#x751F;&#x6210;source map</p>
+<ul>
+<li>fromRawMappings&#x6D41;&#x7A0B;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;Generator<ul>
+<li>&#x8C03;&#x7528;addMappingsForFile&#x51FD;&#x6570;&#xFF0C;&#x4F20;&#x5165;map&#x53C2;&#x6570;</li>
+<li>&#x904D;&#x5386;map&#x6570;&#x7EC4;&#xFF0C;&#x8C03;&#x7528;addMapping&#x51FD;&#x6570;</li>
+<li>&#x6700;&#x540E;&#x8C03;&#x7528;Generator&#x7684;&#x76F8;&#x5173;&#x51FD;&#x6570;&#xFF0C;&#x6BD4;&#x5982;addSimpleMapping&#x51FD;&#x6570;&#xFF0C;&#x4F20;&#x5165;generatedLine&#x3001;generatedColumn</li>
+<li>&#x8C03;&#x7528;B64Builder&#x7684;startSegment&#x51FD;&#x6570;&#xFF0C;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x4E3A;&#x5F53;&#x524D;&#x5217;&#x51CF;&#x53BB;&#x4E0A;&#x4E00;&#x5217;&#x3002;&#xFF08;base64&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#xFF09;</li>
+</ul>
+</li>
+<li>Generator&#x7684;toMap&#x51FD;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;source map</li>
+</ul>
+<h3 id="source-map-&#x683C;&#x5F0F;">source map &#x683C;&#x5F0F;</h3>
+<p>&#x89C1;source-map.js &#x6587;&#x4EF6;MixedSourceMap&#x7C7B;&#x578B;</p>
+<p>bundle sourcemap&#x683C;&#x5F0F;&#xFF0C;&#x89C1;BasicSourceMap</p>
+<p>sourcemap&#x662F;&#x4E00;&#x4E2A;json&#x6587;&#x4EF6;&#xFF0C;&#x5B57;&#x6BB5;&#x89E3;&#x91CA;</p>
+<ul>
+<li>sources&#xFF0C;&#x6570;&#x7EC4;&#xFF0C;rn&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+<li>sourcesContent&#xFF0C;sources&#x5BF9;&#x5E94;&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x6570;&#x7EC4;</li>
+<li>x_facebook_sources&#xFF0C;&#x91CC;&#x9762;&#x662F;&#x4E0E;sources&#x5BF9;&#x5E94;&#x4E00;&#x81F4;&#x7684;&#x51FD;&#x6570;&#x540D;&#x6570;&#x7EC4;<ul>
+<li>names&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x7684;&#x51FD;&#x6570;&#x540D;&#x6570;&#x7EC4;</li>
+<li>mappings,</li>
+</ul>
+</li>
+<li>names&#xFF0C;&#x6240;&#x6709;&#x7684;&#x51FD;&#x6570;&#x6570;&#x7EC4;</li>
+<li>mappings&#xFF0C;mapping&#x4E00;&#x4E2A;&#x5206;&#x53F7;&#x4E3A;1&#x884C;&#xFF0C;&#x9017;&#x53F7;&#x4E3A;&#x4E00;&#x4E2A;segment</li>
+</ul>
+<p>ram-bundle sourcemap&#x683C;&#x5F0F;&#xFF0C;&#x89C1;IndexMap</p>
+<ul>
+<li>sections&#xFF0C;&#x5143;&#x7D20;&#x4E3A;json&#xFF0C;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x628A;bundle source map&#x5207;&#x5272;&#x4E3A;&#x5F88;&#x591A;sections<ul>
+<li>map&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x5B57;&#x6BB5;&#x548C;bundle&#x6253;&#x5305;&#x4E00;&#x6837;</li>
+<li>offset</li>
+</ul>
+</li>
+<li>x_facebook_offsets&#xFF0C;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x7684;offset</li>
+<li>x_metro_module_paths&#xFF0C;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+</ul>
+<h3 id="source-map-&#x89E3;&#x6790;">source map &#x89E3;&#x6790;</h3>
+<pre><code>  it(&apos;performs lookup correctly in a non-indexed map&apos;, () =&gt; {
+    const map = {
+      version: 3,
+      names: [&apos;first&apos;, &apos;second&apos;],
+      sources: [&apos;foo.js&apos;, &apos;bar.js&apos;],
+      mappings: &apos;AAAAA,CCCCC&apos;,
+    };
+    const consumer = new Consumer(map);
+    expect(
+      consumer.originalPositionFor({line: add1(0), column: add0(0)}),
+    ).toEqual(
+      objectContaining({source: &apos;foo.js&apos;, line: 1, column: 0, name: &apos;first&apos;}),
+    );
+  });
+</code></pre><p>Consumer&#x7684;&#x521D;&#x59CB;&#x5316;</p>
+<ul>
+<li>DelegatingConsumer&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4F20;&#x5165;MixedSourceMap</li>
+<li>&#x82E5;&#x6709;mapping&#xFF0C;&#x521D;&#x59CB;&#x5316;MappingsConsumer&#xFF08;basic&#xFF09;&#xFF0C;&#x82E5;&#x65E0;mappings&#xFF0C;&#x521D;&#x59CB;&#x5316;SectionsConsumer&#xFF08;index&#xFF09;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x7EE7;&#x627F;AbstractConsumer</li>
+</ul>
+<p>&#x8C03;&#x7528;originalPositionFor&#x51FD;&#x6570;</p>
+<p>&#x5BF9;&#x4E8E;MappingsConsumer</p>
+<ul>
+<li>&#x8C03;&#x7528;_decodeAndCacheMappings&#x51FD;&#x6570;&#xFF0C;&#x89E3;&#x7801;sourcemap&#x6587;&#x4EF6;&#xFF0C;&#x5F97;&#x5230;mappings&#x5BF9;&#x8C61;</li>
+<li>&#x8C03;&#x7528;greatestLowerBound&#x51FD;&#x6570;&#xFF0C;&#x904D;&#x5386;mappings&#xFF0C;&#x6BD4;&#x5BF9;generatedLine&#xFF0C;generatedColumn&#xFF08;&#x5806;&#x6808;&#xFF09;&#xFF0C;&#x62FF;&#x5230;&#x539F;&#x6587;&#x4EF6;&#x7684;line&#x3001;column</li>
+</ul>
+<h3 id="compose-source-map">compose source map</h3>
+<p>&#x89C1;composeSourceMaps.js&#x6587;&#x4EF6;&#xFF0C;&#x4E0A;&#x6587;compose-source-maps.js&#x5408;&#x5E76;&#x6E90;&#x7801;map&#x548C;hermes map&#xFF0C;&#x8C03;&#x7528;&#x7684;&#x5C31;&#x662F;composeSourceMaps.js&#x6587;&#x4EF6;&#x7684;composeSourceMaps&#x51FD;&#x6570;</p>
+<h2 id="mozillasource-map">mozilla/source-map</h2>
+<p>source map spec <a href="https://sourcemaps.info/spec.html" target="_blank">https://sourcemaps.info/spec.html</a></p>
+<h3 id="source-map&#x89E3;&#x6790;">source map&#x89E3;&#x6790;</h3>
+<p>mozilla/source-map&#x7684;&#x6D41;&#x7A0B;&#x4E0E;metro-source-map&#x7C7B;&#x4F3C;</p>
+<ul>
+<li>SourceMapConsumer&#xFF08;bundle BasicSourceMapConsumer&#xFF0C;ram-bundle IndexedSourceMapConsumer&#xFF09;&#xFF0C;mozilla/source-map</li>
+<li>originalPositionFor&#xFF0C;&#x8FD4;&#x56DE;source&#xFF08;&#x6E90;&#x6587;&#x4EF6;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF09;&#xFF0C;&#x53C2;&#x6570;line&#xFF0C;colum&#xFF0C;&#x6570;&#x636E;&#x6765;&#x81EA;&#x4E8E;mapping</li>
+</ul>
+<p>mapping&#x683C;&#x5F0F;</p>
+<pre><code>{
+  generatedLine: 1099, 
+  generatedColumn: 25,
+  source: null,
+  originalLine: 11,
+  originalColumn: 19,
+  name: null
+}
+</code></pre><p>generatedLine&#xFF0C;generatedColumn&#x662F;crash&#x65F6;&#x5806;&#x6808;&#x7684;&#x884C;&#x5217;&#xFF0C;originalLine&#xFF0C;originalColumn&#x4E3A;&#x89E3;&#x6790;&#x51FA;&#x6765;&#x7684;&#x6E90;&#x6587;&#x4EF6;&#x884C;&#x5217;&#x3002;
+source&#x4E3A;sourcemap&#x6587;&#x4EF6;&#x4E2D;sources&#x6570;&#x7EC4;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x53D6;&#x51FA;&#x6E90;&#x6587;&#x4EF6;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</p>
+<p>originalPositionFor&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;mozilla/source-map&#xFF0C;&#x8C03;&#x7528;_findMapping&#x51FD;&#x6570;&#x904D;&#x5386;mapping&#xFF0C;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;originalLine&#x548C;originalColumn</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../cli/cli.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: cli">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"sourcemap","level":"1.3.3","depth":2,"next":{"title":"第三章 ReactNative的渲染层","level":"1.4","depth":1,"ref":"","articles":[{"title":"ReactNative的View","level":"1.4.1","depth":2,"path":"article/view/view.md","ref":"article/view/view.md","articles":[]},{"title":"渲染器","level":"1.4.2","depth":2,"path":"article/render/render.md","ref":"article/render/render.md","articles":[]}]},"previous":{"title":"cli","level":"1.3.2","depth":2,"path":"article/cli/cli.md","ref":"article/cli/cli.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"article/sourcemap/sourcemap.md","mtime":"2025-08-01T16:24:15.134Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-09-24T13:00:58.082Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

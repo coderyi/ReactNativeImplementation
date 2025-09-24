@@ -1,0 +1,856 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JSI · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../AppRegistry/AppRegistry.html" />
+    
+    
+    <link rel="prev" href="../bridge/bridge.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ReactNative框架的设计与实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章 ReactNative的运行时
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../bundle/bundle.html">
+            
+                <a href="../bundle/bundle.html">
+            
+                    
+                    Native运行时Bundle处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../API/API.html">
+            
+                <a href="../API/API.html">
+            
+                    
+                    Native API的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html">
+            
+                    
+                    Bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="JSI.html">
+            
+                <a href="JSI.html">
+            
+                    
+                    JSI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../AppRegistry/AppRegistry.html">
+            
+                <a href="../AppRegistry/AppRegistry.html">
+            
+                    
+                    JS侧的AppRegistry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../timer/timer.html">
+            
+                <a href="../timer/timer.html">
+            
+                    
+                    Timer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../interaction/interaction.html">
+            
+                <a href="../interaction/interaction.html">
+            
+                    
+                    Interaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第二章 ReactNative的包
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../metro/metro.html">
+            
+                <a href="../metro/metro.html">
+            
+                    
+                    metro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../cli/cli.html">
+            
+                <a href="../cli/cli.html">
+            
+                    
+                    cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../sourcemap/sourcemap.html">
+            
+                <a href="../sourcemap/sourcemap.html">
+            
+                    
+                    sourcemap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章 ReactNative的渲染层
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../view/view.html">
+            
+                <a href="../view/view.html">
+            
+                    
+                    ReactNative的View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../render/render.html">
+            
+                <a href="../render/render.html">
+            
+                    
+                    渲染器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第四章 ReactNative的API和组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../RCTNetwork/RCTNetwork.html">
+            
+                <a href="../RCTNetwork/RCTNetwork.html">
+            
+                    
+                    RCTNetwork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../VirtualizedList/VirtualizedList.html">
+            
+                <a href="../VirtualizedList/VirtualizedList.html">
+            
+                    
+                    VirtualizedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第五章 常见的三方库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../CRN/CRN.html">
+            
+                <a href="../CRN/CRN.html">
+            
+                    
+                    CRN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../FlashList/FlashList.html">
+            
+                <a href="../FlashList/FlashList.html">
+            
+                    
+                    RecyclerListView和FlashList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >JSI</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="jsi">JSI</h1>
+<p>react-native v0.67.3</p>
+<p>node v14.21.2</p>
+<p>JSI&#x5168;&#x79F0;JavaScript Interface&#xFF0C;JavaScript&#x63A5;&#x53E3;&#x5C42;, &#x65E8;&#x5728;&#x62B9;&#x5E73;JS &#x865A;&#x62DF;&#x673A;/&#x5F15;&#x64CE;&#xFF08;JSCore/V8/quick js&#xFF09;&#x7B49;APi&#x5DEE;&#x5F02;&#xFF0C;&#x5C01;&#x88C5;&#x7EDF;&#x4E00;&#x7684;JS &#x865A;&#x62DF;&#x673A;API&#xFF0C;<a href="https://github.com/react-native-community/discussions-and-proposals/issues/91" target="_blank">https://github.com/react-native-community/discussions-and-proposals/issues/91</a></p>
+<h2 id="n-api">N-API</h2>
+<p>&#x7C7B;&#x4F3C;JSI&#x7684;&#x6982;&#x5FF5;&#x5728;JSI&#x4E2D;&#x4E5F;&#x6709;&#x4F53;&#x73B0;&#xFF0C;&#x53EB;&#x505A;Node-API&#x3002;&#x5B98;&#x65B9;&#x7684;&#x89E3;&#x91CA;&#x5982;&#x4E0B;</p>
+<p><a href="https://nodejs.org/api/n-api.html" target="_blank">Node-API</a>&#xFF08;&#x4EE5;&#x524D;&#x7684;N-API&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x672C;&#x5730;&#x63D2;&#x4EF6;&#x7684;API&#x3002;&#x5B83;&#x72EC;&#x7ACB;&#x4E8E;&#x5E95;&#x5C42;&#x7684;JavaScript&#x8FD0;&#x884C;&#x65F6;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;V8&#xFF09;&#xFF0C;&#x5E76;&#x4F5C;&#x4E3A;Node.js&#x672C;&#x8EAB;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x8FDB;&#x884C;&#x7EF4;&#x62A4;&#x3002;&#x8BE5;API&#x5C06;&#x5728;Node.js&#x7684;&#x5404;&#x4E2A;&#x7248;&#x672C;&#x4E2D;&#x4FDD;&#x6301;&#x5E94;&#x7528;&#x4E8C;&#x8FDB;&#x5236;&#x63A5;&#x53E3;&#xFF08;ABI&#xFF09;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x3002;&#x5B83;&#x7684;&#x76EE;&#x7684;&#x662F;&#x4F7F;&#x9644;&#x52A0;&#x7EC4;&#x4EF6;&#x4E0D;&#x53D7;&#x5E95;&#x5C42;JavaScript&#x5F15;&#x64CE;&#x53D8;&#x5316;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x5E76;&#x5141;&#x8BB8;&#x4E3A;&#x4E00;&#x4E2A;&#x4E3B;&#x8981;&#x7248;&#x672C;&#x7F16;&#x8BD1;&#x7684;&#x6A21;&#x5757;&#x5728;&#x540E;&#x6765;&#x7684;Node.js&#x4E3B;&#x8981;&#x7248;&#x672C;&#x4E0A;&#x8FD0;&#x884C;&#x800C;&#x65E0;&#x9700;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#x3002;</p>
+<h2 id="jsiruntime">JSIRuntime</h2>
+<p>JSI&#x5B9A;&#x4E00;&#x4E2A;runtime protocol&#xFF0C;&#x4EE5;&#x5B9E;&#x73B0;&#x4E0D;&#x540C;&#x7684;runtime&#xFF0C;JSI runtime &#x76EE;&#x524D;&#x5B9E;&#x73B0;&#x5F15;&#x64CE;&#x662F;JSCRuntime</p>
+<p>JSI Runtime&#x63D0;&#x4F9B;&#x7684;&#x516C;&#x5F00;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-jsx"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JSI_EXPORT</span> <span class="hljs-title">Runtime</span> </span>{
+ public:
+  virtual ~Runtime();
+
+  virtual Value evaluateJavaScript(
+      <span class="hljs-keyword">const</span> std::shared_ptr&lt;<span class="hljs-keyword">const</span> Buffer&gt;&amp; buffer,
+      <span class="hljs-keyword">const</span> std::string&amp; sourceURL) = <span class="hljs-number">0</span>;
+
+  virtual std::shared_ptr&lt;<span class="hljs-keyword">const</span> PreparedJavaScript&gt; prepareJavaScript(
+      <span class="hljs-keyword">const</span> std::shared_ptr&lt;<span class="hljs-keyword">const</span> Buffer&gt;&amp; buffer,
+      std::string sourceURL) = <span class="hljs-number">0</span>;
+
+  virtual Value evaluatePreparedJavaScript(
+      <span class="hljs-keyword">const</span> std::shared_ptr&lt;<span class="hljs-keyword">const</span> PreparedJavaScript&gt;&amp; js) = <span class="hljs-number">0</span>;
+
+  <span class="hljs-comment">/// \return the global object</span>
+  virtual <span class="hljs-built_in">Object</span> global() = <span class="hljs-number">0</span>;
+
+};
+</code></pre>
+<p>JSI runtime&#x63D0;&#x4F9B;&#x57FA;&#x672C;&#x7684;&#x65B9;&#x6CD5;&#x5982;evaluateJavaScript&#x3001;&#x83B7;&#x53D6;global&#x5BF9;&#x8C61;</p>
+<p><strong>prepare</strong></p>
+<p>&#x53E6;&#x5916;JSI runtime &#x63D0;&#x4F9B;prepare&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x628A;js data &#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;</p>
+<p>prepare&#x7684;&#x4F7F;&#x7528;</p>
+<pre><code class="lang-markdown">TEST_P(JSITest, PreparedJavaScriptSourceTest) {
+  rt.evaluateJavaScript(std::make_unique<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">StringBuffer</span>&gt;</span></span>(&quot;var q = 0;&quot;), &quot;&quot;);
+  auto prep = rt.prepareJavaScript(std::make_unique<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">StringBuffer</span>&gt;</span></span>(&quot;q++;&quot;), &quot;&quot;);
+  EXPECT_EQ(rt.global().getProperty(rt, &quot;q&quot;).getNumber(), 0);
+  rt.evaluatePreparedJavaScript(prep);
+  EXPECT_EQ(rt.global().getProperty(rt, &quot;q&quot;).getNumber(), 1);
+  rt.evaluatePreparedJavaScript(prep);
+  EXPECT_EQ(rt.global().getProperty(rt, &quot;q&quot;).getNumber(), 2);
+}
+</code></pre>
+<p>&#x8C03;&#x7528;prepare &#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;SourceJavaScriptPreparation&#x5BF9;&#x8C61;&#xFF0C;&#x91CC;&#x9762;&#x6709;buffer &#x548C; sourceURL&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+<p>evaluatePreparedJavaScript&#x5219;&#x662F;&#x628A;SourceJavaScriptPreparation&#x8BFB;&#x53D6;&#x51FA;&#x6765;&#x5E76;&#x4E14;&#x6267;&#x884C;</p>
+<h2 id="jsiexecutor">JSIExecutor</h2>
+<p>JSIExecutor &#x662F;&#x5BF9;JSI&#x7684;&#x5C01;&#x88C5;&#xFF0C;JSIExecutor&#x7EE7;&#x627F;&#x81EA;JSExecutor&#xFF0C;&#x539F;RCTObjcExecutor&#x4E5F;&#x5B9E;&#x73B0;&#x4E86;JSExecutor</p>
+<pre><code class="lang-jsx"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RN_EXPORT</span> <span class="hljs-title">JSExecutor</span> </span>{
+ public:
+  <span class="hljs-comment">/**
+   * Prepares the JS runtime for React Native by installing global variables.
+   * Called once before any JS is evaluated.
+   */</span>
+  virtual <span class="hljs-keyword">void</span> initializeRuntime() = <span class="hljs-number">0</span>;
+  <span class="hljs-comment">/**
+   * Execute an application script bundle in the JS context.
+   */</span>
+  virtual <span class="hljs-keyword">void</span> loadBundle(
+      std::unique_ptr&lt;<span class="hljs-keyword">const</span> JSBigString&gt; script,
+      std::string sourceURL) = <span class="hljs-number">0</span>;
+
+  <span class="hljs-comment">/**
+   * Add an application &quot;RAM&quot; bundle registry
+   */</span>
+  virtual <span class="hljs-keyword">void</span> setBundleRegistry(
+      std::unique_ptr&lt;RAMBundleRegistry&gt; bundleRegistry) = <span class="hljs-number">0</span>;
+
+  <span class="hljs-comment">/**
+   * Register a file path for an additional &quot;RAM&quot; bundle
+   */</span>
+  virtual <span class="hljs-keyword">void</span> registerBundle(
+      uint32_t bundleId,
+      <span class="hljs-keyword">const</span> std::string &amp;bundlePath) = <span class="hljs-number">0</span>;
+
+  <span class="hljs-comment">/**
+   * Executes BatchedBridge.callFunctionReturnFlushedQueue with the module ID,
+   * method ID and optional additional arguments in JS. The executor is
+   * responsible for using Bridge-&gt;callNativeModules to invoke any necessary
+   * native modules methods.
+   */</span>
+  virtual <span class="hljs-keyword">void</span> callFunction(
+      <span class="hljs-keyword">const</span> std::string &amp;moduleId,
+      <span class="hljs-keyword">const</span> std::string &amp;methodId,
+      <span class="hljs-keyword">const</span> folly::dynamic &amp;<span class="hljs-built_in">arguments</span>) = <span class="hljs-number">0</span>;
+
+  <span class="hljs-comment">/**
+   * Executes BatchedBridge.invokeCallbackAndReturnFlushedQueue with the cbID,
+   * and optional additional arguments in JS and returns the next queue. The
+   * executor is responsible for using Bridge-&gt;callNativeModules to invoke any
+   * necessary native modules methods.
+   */</span>
+  virtual <span class="hljs-keyword">void</span> invokeCallback(
+      <span class="hljs-keyword">const</span> double callbackId,
+      <span class="hljs-keyword">const</span> folly::dynamic &amp;<span class="hljs-built_in">arguments</span>) = <span class="hljs-number">0</span>;
+
+  virtual <span class="hljs-keyword">void</span> setGlobalVariable(
+      std::string propName,
+      std::unique_ptr&lt;<span class="hljs-keyword">const</span> JSBigString&gt; jsonValue) = <span class="hljs-number">0</span>;
+
+  virtual <span class="hljs-keyword">void</span> *getJavaScriptContext() {
+    <span class="hljs-keyword">return</span> nullptr;
+  }
+
+  <span class="hljs-comment">/**
+   * Returns whether or not the underlying executor supports debugging via the
+   * Chrome remote debugging protocol.
+   */</span>
+  virtual bool isInspectable() {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+  }
+
+  <span class="hljs-comment">/**
+   * The description is displayed in the dev menu, if there is one in
+   * this build.  There is a default, but if this method returns a
+   * non-empty string, it will be used instead.
+   */</span>
+  virtual std::string getDescription() = <span class="hljs-number">0</span>;
+
+  virtual <span class="hljs-keyword">void</span> handleMemoryPressure(__unused int pressureLevel) {}
+
+  virtual <span class="hljs-keyword">void</span> destroy() {}
+  virtual ~JSExecutor() {}
+
+  virtual <span class="hljs-keyword">void</span> flush() {}
+
+  <span class="hljs-keyword">static</span> std::string getSyntheticBundlePath(
+      uint32_t bundleId,
+      <span class="hljs-keyword">const</span> std::string &amp;bundlePath);
+};
+
+} <span class="hljs-comment">// namespace react</span>
+} <span class="hljs-comment">// namespace facebook</span>
+</code></pre>
+<p><strong>initializeRuntime</strong></p>
+<p>&#x4E0E;js &#x7684;&#x4EA4;&#x4E92;&#x534F;&#x8BAE;&#x5728;JSIExecutor&#x5185;&#x7684;initializeRuntime&#x51FD;&#x6570;&#x6CE8;&#x5165;&#x7684;</p>
+<p>&#x6BD4;&#x5982;&#x5173;&#x4E8E;invoke&#x7684;&#x6CE8;&#x5165;&#x662F;</p>
+<pre><code class="lang-jsx">runtime_-&gt;global().setProperty(
+      *runtime_,
+      <span class="hljs-string">&quot;nativeFlushQueueImmediate&quot;</span>,
+      <span class="hljs-built_in">Function</span>::createFromHostFunction(
+          *runtime_,
+          PropNameID::forAscii(*runtime_, <span class="hljs-string">&quot;nativeFlushQueueImmediate&quot;</span>),
+          <span class="hljs-number">1</span>,
+          [<span class="hljs-keyword">this</span>](
+              jsi::Runtime &amp;,
+              <span class="hljs-keyword">const</span> jsi::Value &amp;,
+              <span class="hljs-keyword">const</span> jsi::Value *args,
+              size_t count) {
+            <span class="hljs-keyword">if</span> (count != <span class="hljs-number">1</span>) {
+              <span class="hljs-keyword">throw</span> std::invalid_argument(
+                  <span class="hljs-string">&quot;nativeFlushQueueImmediate arg count must be 1&quot;</span>);
+            }
+            callNativeModules(args[<span class="hljs-number">0</span>], <span class="hljs-literal">false</span>);
+            <span class="hljs-keyword">return</span> Value::<span class="hljs-literal">undefined</span>();
+          }));
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x652F;&#x6301;set &#x51FD;&#x6570;</p>
+<p>&#x5176;&#x51FD;&#x6570;&#x5728;JSCRuntime&#x5185;&#x7684;&#x5B9E;&#x73B0;&#x662F;&#x4E00;&#x4E2A;JSObject</p>
+<pre><code class="lang-jsx">jsi::<span class="hljs-built_in">Function</span> JSCRuntime::createFunctionFromHostFunction(
+    <span class="hljs-keyword">const</span> jsi::PropNameID &amp;name,
+    unsigned int paramCount,
+    jsi::HostFunctionType func) {
+
+  JSObjectRef funcRef = JSObjectMake(
+      ctx_,
+      hostFunctionClass,
+      <span class="hljs-keyword">new</span> HostFunctionMetadata(<span class="hljs-keyword">this</span>, func, paramCount, stringRef(name)));
+  <span class="hljs-keyword">return</span> createObject(funcRef).getFunction(*<span class="hljs-keyword">this</span>);
+}
+
+using HostFunctionType = std::<span class="hljs-function"><span class="hljs-keyword">function</span>&lt;
+    <span class="hljs-title">Value</span>(<span class="hljs-params">Runtime&amp; rt, const Value&amp; thisVal, const Value* args, size_t count</span>)&gt;;
+
+<span class="hljs-title">void</span> <span class="hljs-title">JSCRuntime</span>::<span class="hljs-title">setPropertyValue</span>(<span class="hljs-params">
+    jsi::Object &amp;object,
+    const jsi::PropNameID &amp;name,
+    const jsi::Value &amp;value</span>) </span>{
+  JSValueRef exc = nullptr;
+  JSObjectSetProperty(
+      ctx_,
+      objectRef(object),
+      stringRef(name),
+      valueRef(value),
+      kJSPropertyAttributeNone,
+      &amp;exc);
+  checkException(exc);
+}
+</code></pre>
+<p><strong>loadBundle</strong></p>
+<p>loadBundle&#x7684;&#x987A;&#x5E8F;&#x662F;</p>
+<ol>
+<li>evaluateJavaScript</li>
+<li>flush</li>
+</ol>
+<p><strong>setBundleRegistry</strong></p>
+<p>RAM Bundle&#x624D;&#x652F;&#x6301;</p>
+<p>&#x6CE8;&#x5165;nativeRequire&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E14;&#x4FDD;&#x5B58;RAMBundleRegistry&#x53C2;&#x6570;&#x5230;&#x5185;&#x5B58;</p>
+<p>nativeRequire&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;</p>
+<ul>
+<li>&#x8C03;&#x7528;RAMBundleRegistry::getModule&#x7684;&#x65B9;&#x6CD5;</li>
+<li>evaluateJavaScript&#x5F97;&#x5230;&#x7684;module&#x7684;&#x4EE3;&#x7801;</li>
+</ul>
+<p><strong>registerBundle</strong></p>
+<p>&#x5982;&#x679C;&#x5B58;&#x5728;bundleRegistry_(RAMBundleRegistry)&#xFF0C;&#x5219;&#x8C03;&#x7528;&#x5176;registerBundle&#x3002;&#x6CA1;&#x6709;&#x5219;evaluateJavaScript</p>
+<p>&#x5176;&#x4E2D;RAMBundleRegistry&#x6709;&#x4E00;&#x4E2A;map&#x4FDD;&#x5B58;&#x7740;bundleid&#x548C;bundlepath&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;</p>
+<h2 id="jsidynamic">JSIDynamic</h2>
+<p><strong>valueFromDynamic</strong></p>
+<p>cpp&#x7684;&#x5BF9;&#x8C61;&#xFF08;folly::dynamic&#xFF09;&#x8F6C;&#x6362;&#x4E3A;JS &#x5BF9;&#x8C61;&#xFF08;Value&#xFF09;</p>
+<p><strong>Value</strong></p>
+<p>&#x6574;&#x4E2A;JSI&#x901A;&#x8FC7;Value&#x6765;&#x8868;&#x793A;&#x5404;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;Value&#x80FD;&#x591F;&#x8F6C;&#x6362;&#x4E3A;&#x5176;&#x4ED6;&#x7684;&#x7C7B;&#x578B; Object String &#x7B49;</p>
+<p>Object&#x7684;&#x5E38;&#x89C1;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-jsx">Value getProperty(Runtime&amp; runtime, <span class="hljs-keyword">const</span> char* name) <span class="hljs-keyword">const</span>;
+template &lt;typename T&gt;
+  <span class="hljs-keyword">void</span> setProperty(Runtime&amp; runtime, <span class="hljs-keyword">const</span> char* name, T&amp;&amp; value);
+</code></pre>
+<p><strong>JSValueRef</strong></p>
+<p>&#x5728;JSCRuntime&#x4E2D;&#x7684;valueRef&#x65B9;&#x6CD5;&#xFF0C;&#x4F1A;&#x6700;&#x7EC8;&#x628A;jsi&#x7684;Value&#x8F6C;&#x6362;&#x4E3A;JSValueRef</p>
+<pre><code>JSValueRef JSCRuntime::valueRef(const jsi::Value &amp;value) {
+  // I would rather switch on value.kind_
+  if (value.isUndefined()) {
+    return JSValueMakeUndefined(ctx_);
+  } else if (value.isNull()) {
+    return JSValueMakeNull(ctx_);
+  } else if (value.isBool()) {
+    return JSValueMakeBoolean(ctx_, value.getBool());
+  } else if (value.isNumber()) {
+    return JSValueMakeNumber(ctx_, value.getNumber());
+  } else if (value.isSymbol()) {
+    return symbolRef(value.getSymbol(*this));
+  } else if (value.isString()) {
+    return JSValueMakeString(ctx_, stringRef(value.getString(*this)));
+  } else if (value.isObject()) {
+    return objectRef(value.getObject(*this));
+  } else {
+    // What are you?
+    abort();
+  }
+}
+</code></pre><h2 id="jsinativemodules">JSINativeModules</h2>
+<p>createModule&#x65B9;&#x6CD5;</p>
+<p>&#x9996;&#x5148;&#x4ECE;js&#x4FA7;&#x83B7;&#x53D6;&#x5230;__fbGenNativeModule&#xFF0C;&#x8BE6;&#x7EC6;&#x89C1;NativeModules.js</p>
+<pre><code>function genModule(
+  config: ?ModuleConfig,
+  moduleID: number,
+): ?{
+  name: string,
+  module?: {...},
+  ...
+} {
+
+  const [moduleName, constants, methods, promiseMethods, syncMethods] = config;
+
+  if (!constants &amp;&amp; !methods) {
+    // Module contents will be filled in lazily later
+    return {name: moduleName};
+  }
+
+  const module = {};
+  methods &amp;&amp;
+    methods.forEach((methodName, methodID) =&gt; {
+      const isPromise =
+        (promiseMethods &amp;&amp; arrayContains(promiseMethods, methodID)) || false;
+      const isSync =
+        (syncMethods &amp;&amp; arrayContains(syncMethods, methodID)) || false;
+
+      const methodType = isPromise ? &apos;promise&apos; : isSync ? &apos;sync&apos; : &apos;async&apos;;
+      module[methodName] = genMethod(moduleID, methodID, methodType);
+    });
+
+  Object.assign(module, constants);
+
+  if (module.getConstants == null) {
+    module.getConstants = () =&gt; constants || Object.freeze({});
+  }
+
+  return {name: moduleName, module};
+}
+
+// export this method as a global so we can call it from native
+global.__fbGenNativeModule = genModule;
+</code></pre><p>&#x7136;&#x540E;&#x8C03;&#x7528;__fbGenNativeModule&#x51FD;&#x6570;&#xFF0C;&#x4F20;&#x5165;ModuleConfig&#x548C;moduleId&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x7684;&#x6765;&#x6E90;&#x81EA;m_moduleRegistry</p>
+<p>__fbGenNativeModule&#x51FD;&#x6570;&#x4F1A;&#x8FD4;&#x56DE;module&#x5230;native&#x4FA7;&#xFF0C;&#x5B8C;&#x6210;createModule&#x7684;&#x8C03;&#x7528;</p>
+<p>m_moduleRegistry&#x7684;&#x6570;&#x636E;&#x6E90;&#x5728;RCTCxxBridge&#x7684;_buildModuleRegistryUnlocked&#x8FDB;&#x884C;&#x6784;&#x5EFA;&#xFF0C;&#x8FD9;&#x91CC;&#x4F1A;&#x628A;_moduleDataByID&#xFF08;RCTModuleData&#xFF09;&#x8F6C;&#x6362;&#x4E3A;RCTNativeModule</p>
+<p>getModule&#x65B9;&#x6CD5;&#xFF0C;&#x4ECE;m_objects&#x4E2D;&#x67E5;&#x627E;module</p>
+<h2 id="hostobject">HostObject</h2>
+<p>&#x5B9E;&#x73B0;&#x8BE5;&#x63A5;&#x53E3;&#x5C31;&#x53EF;&#x4EE5;&#x5728;JS Runtime&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</p>
+<pre><code>class JSI_EXPORT HostObject {
+  virtual Value get(Runtime&amp;, const PropNameID&amp; name);
+
+  virtual void set(Runtime&amp;, const PropNameID&amp; name, const Value&amp; value);
+
+  virtual std::vector&lt;PropNameID&gt; getPropertyNames(Runtime&amp; rt);
+
+};
+</code></pre><p>&#x8FD9;&#x51E0;&#x4E2A;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;mmkv&#x7684;&#x4F8B;&#x5B50;</p>
+<p>Object&#x63D0;&#x4F9B;HostObject &#x8F6C; Object&#x7684;&#x65B9;&#x6CD5;</p>
+<pre><code>class JSI_EXPORT Object : public Pointer {
+
+  static Object createFromHostObject(
+      Runtime&amp; runtime,
+      std::shared_ptr&lt;HostObject&gt; ho) {
+    return runtime.createObject(ho);
+  }
+
+  template &lt;typename T = HostObject&gt;
+  std::shared_ptr&lt;T&gt; getHostObject(Runtime&amp; runtime) const;
+
+  template &lt;typename T = HostObject&gt;
+  std::shared_ptr&lt;T&gt; asHostObject(Runtime&amp; runtime) const;
+};
+</code></pre><p>Runtime&#x4E5F;&#x6709;&#x76F8;&#x5173;&#x65B9;&#x6CD5;</p>
+<pre><code>  virtual Object createObject(std::shared_ptr&lt;HostObject&gt; ho) = 0;
+
+  virtual std::shared_ptr&lt;HostObject&gt; getHostObject(const jsi::Object&amp;) = 0;
+  virtual HostFunctionType&amp; getHostFunction(const jsi::Function&amp;) = 0;
+
+  virtual bool isHostObject(const jsi::Object&amp;) const = 0;
+  virtual bool isHostFunction(const jsi::Function&amp;) const = 0;
+
+  virtual Function createFunctionFromHostFunction(
+      const PropNameID&amp; name,
+      unsigned int paramCount,
+      HostFunctionType func) = 0;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../bridge/bridge.html" class="navigation navigation-prev " aria-label="Previous page: Bridge">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../AppRegistry/AppRegistry.html" class="navigation navigation-next " aria-label="Next page: JS侧的AppRegistry">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JSI","level":"1.2.4","depth":2,"next":{"title":"JS侧的AppRegistry","level":"1.2.5","depth":2,"path":"article/AppRegistry/AppRegistry.md","ref":"article/AppRegistry/AppRegistry.md","articles":[]},"previous":{"title":"Bridge","level":"1.2.3","depth":2,"path":"article/bridge/bridge.md","ref":"article/bridge/bridge.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"article/JSI/JSI.md","mtime":"2025-07-31T15:02:01.694Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-09-24T13:00:58.082Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

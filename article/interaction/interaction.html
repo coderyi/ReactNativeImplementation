@@ -1,0 +1,648 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Interaction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../timer/timer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ReactNative框架的设计与实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章 ReactNative的运行时
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../bundle/bundle.html">
+            
+                <a href="../bundle/bundle.html">
+            
+                    
+                    Native运行时Bundle处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../API/API.html">
+            
+                <a href="../API/API.html">
+            
+                    
+                    Native API的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html">
+            
+                    
+                    Bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../JSI/JSI.html">
+            
+                <a href="../JSI/JSI.html">
+            
+                    
+                    JSI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../AppRegistry/AppRegistry.html">
+            
+                <a href="../AppRegistry/AppRegistry.html">
+            
+                    
+                    JS侧的AppRegistry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../timer/timer.html">
+            
+                <a href="../timer/timer.html">
+            
+                    
+                    Timer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7" data-path="interaction.html">
+            
+                <a href="interaction.html">
+            
+                    
+                    Interaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第二章 ReactNative的包
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../metro/metro.html">
+            
+                <a href="../metro/metro.html">
+            
+                    
+                    metro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../cli/cli.html">
+            
+                <a href="../cli/cli.html">
+            
+                    
+                    cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../sourcemap/sourcemap.html">
+            
+                <a href="../sourcemap/sourcemap.html">
+            
+                    
+                    sourcemap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章 ReactNative的渲染层
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../view/view.html">
+            
+                <a href="../view/view.html">
+            
+                    
+                    ReactNative的View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../render/render.html">
+            
+                <a href="../render/render.html">
+            
+                    
+                    渲染器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第四章 ReactNative的API和组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../RCTNetwork/RCTNetwork.html">
+            
+                <a href="../RCTNetwork/RCTNetwork.html">
+            
+                    
+                    RCTNetwork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../VirtualizedList/VirtualizedList.html">
+            
+                <a href="../VirtualizedList/VirtualizedList.html">
+            
+                    
+                    VirtualizedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第五章 常见的三方库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../CRN/CRN.html">
+            
+                <a href="../CRN/CRN.html">
+            
+                    
+                    CRN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../FlashList/FlashList.html">
+            
+                <a href="../FlashList/FlashList.html">
+            
+                    
+                    RecyclerListView和FlashList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Interaction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="interaction">Interaction</h1>
+<p>InteractionManager&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x5141;&#x8BB8;&#x957F;&#x65F6;&#x95F4;&#x7684;&#x540C;&#x6B65;&#x4EFB;&#x52A1;&#xFF0C;&#x4EFB;&#x52A1;&#x4F1A;&#x5B89;&#x6392;&#x5230;&#x6240;&#x6709;&#x4E92;&#x52A8;&#x6216;&#x52A8;&#x753B;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x518D;&#x8FDB;&#x884C;&#x3002;</p>
+<pre><code> InteractionManager.runAfterInteractions(() =&gt; {
+   // ...long-running synchronous task...
+ });
+</code></pre><p>&#x4E0E;&#x5176;&#x4ED6;&#x8C03;&#x5EA6;&#x65B9;&#x6848;&#x5BF9;&#x6BD4;</p>
+<ul>
+<li>setImmediate/setTimeout()&#xFF0C;&#x5EF6;&#x8FDF;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x4F1A;delay&#x52A8;&#x753B;</li>
+<li>runAfterInteractions&#xFF0C;&#x5EF6;&#x8FDF;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x4E0D;&#x662F;delay&#x52A8;&#x753B;</li>
+</ul>
+<p>runAfterInteractions&#x6D41;&#x7A0B;</p>
+<ul>
+<li>new &#x4E00;&#x4E2A; Promise&#xFF0C;&#x5E76;&#x4E14;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;tasks&#x6570;&#x7EC4;<ul>
+<li>_scheduleUpdate&#xFF0C;&#x8C03;&#x7528;setTimeout/setImmediate&#xFF0C;func&#x4E3A;_processUpdate</li>
+<li>tasks push task</li>
+<li>tasks push &#x4E00;&#x4E2A;&#x65B0;&#x7684;task&#xFF0C;run&#x4E3A;&#x8BE5;Promise&#x7684;resolve&#x3002;</li>
+<li>&#x628A;tasks&#x5165;&#x961F;_taskQueue</li>
+</ul>
+</li>
+<li>return&#x76F8;&#x5173;&#x8FD4;&#x56DE;&#x503C;<ul>
+<li>then&#xFF0C;promise.then</li>
+<li>done&#xFF0C;promise.done</li>
+<li>cacel&#xFF0C;_taskQueue&#x8C03;&#x7528;cancelTasks&#x53D6;&#x6D88;tasks</li>
+</ul>
+</li>
+</ul>
+<p>_processUpdate&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x901A;&#x77E5;&#x76D1;&#x542C;&#x8005;&#x5E76;&#x4E14;&#x5904;&#x7406;&#x961F;&#x5217;</p>
+<ul>
+<li>_addInteractionSet&#x904D;&#x5386;&#x6DFB;&#x52A0;&#x81F3;_interactionSet</li>
+<li>_deleteInteractionSet&#x904D;&#x5386;&#xFF0C;&#x4F9D;&#x6B21;&#x4ECE;_interactionSet&#x79FB;&#x9664;handle</li>
+<li>emit interactionComplete/interactionStart</li>
+<li>&#x53EA;&#x6709;&#x5F53;&#x6CA1;&#x6709;&#x8981;&#x5904;&#x7406;&#x7684;handle&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x4F1A;&#x5FAA;&#x73AF;&#x8C03;&#x7528;_taskQueue.processNext()&#xFF0C;&#x8FD9;&#x91CC;&#x6700;&#x7EC8;&#x4F1A;&#x6267;&#x884C;runAfterInteractions&#x4EFB;&#x52A1;</li>
+<li>_addInteractionSet&#x3001;_deleteInteractionSet&#x5747;&#x6E05;&#x7A7A;</li>
+</ul>
+<p>createInteractionHandle</p>
+<ul>
+<li>_scheduleUpdate</li>
+<li>handle&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x8BA1;&#x6570;</li>
+<li>_addInteractionSet&#x589E;&#x52A0;handle&#xFF08;number&#xFF09;</li>
+</ul>
+<p>createInteractionHandle&#x7684;&#x8C03;&#x7528;&#x65B9;</p>
+<ul>
+<li>&#x5728;animate&#x51FD;&#x6570;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x4EE5;&#x53CA;&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;&#x82E5;__isInteraction&#x4E3A;true&#x5206;&#x522B;&#x8C03;&#x7528;createInteractionHandle&#x3001;clearInteractionHandle</li>
+<li>&#x5728;PanResponder&#x7684;onResponderGrant&#x51FD;&#x6570;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;createInteractionHandle&#x3002;&#x7136;&#x540E;&#x5728;onResponderEnd&#x65F6;&#x4F1A;&#x8C03;&#x7528;clearInteractionHandle</li>
+</ul>
+<p>clearInteractionHandle</p>
+<ul>
+<li>_scheduleUpdate</li>
+<li>_addInteractionSet&#x5220;&#x9664;&#x4F20;&#x5165;handle</li>
+<li>_deleteInteractionSet&#x589E;&#x52A0;&#x8BE5;handle</li>
+</ul>
+<h2 id="taskqueue">TaskQueue</h2>
+<p>_getCurrentQueue</p>
+<ul>
+<li>&#x53D6;&#x51FA;_queueStack&#xFF08;&#x6570;&#x7EC4;&#xFF09;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x4E3A;queue</li>
+<li>&#x82E5;queue&#x7684;popable&#x4E3A;true&#x4E14;queue&#x5143;&#x7D20;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;_queueStack pop&#xFF0C;&#x5220;&#x9664;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;<ul>
+<li>&#x63A5;&#x7740;&#x9012;&#x5F52;&#x8C03;&#x7528;_getCurrentQueue</li>
+</ul>
+</li>
+<li>&#x5426;&#x5219;&#x8FD4;&#x56DE;queue.tasks</li>
+</ul>
+<p>enqueue&#xFF0C;&#x8C03;&#x7528;_getCurrentQueue&#x5165;&#x961F;task</p>
+<p>enqueueTasks&#xFF0C;&#x5206;&#x522B;&#x8C03;&#x7528;enqueue&#x5165;&#x961F;task</p>
+<p>processNext</p>
+<ul>
+<li>&#x8C03;&#x7528;_getCurrentQueue&#x83B7;&#x53D6;&#x5230;&#x6808;&#x9876;&#x7684;queue&#x7684;tasks</li>
+<li>&#x53D6;&#x51FA;tasks&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;<ul>
+<li>&#x82E5;task&#x4E3A;&#x51FD;&#x6570;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x6267;&#x884C;task&#x51FD;&#x6570;</li>
+<li>&#x82E5;task&#x4E3A;SimpleTask&#xFF0C;&#x5219;&#x8C03;&#x7528;task.run()</li>
+<li>&#x82E5;task&#x4E3A;PromiseTask,&#x5219;&#x6267;&#x884C;_genPromise(task)</li>
+</ul>
+</li>
+</ul>
+<p>_genPromise</p>
+<ul>
+<li>&#x53D6;&#x51FA;_queueStack&#x6808;&#x9876;&#x7684;&#x5143;&#x7D20;item</li>
+<li>&#x8C03;&#x7528;&#x5165;&#x53C2;task&#x7684;gen&#x51FD;&#x6570;&#xFF0C;&#x4E4B;&#x540E;&#x628A;&#x524D;&#x9762;&#x7684;item&#x7684;popable&#x8BBE;&#x7F6E;&#x4E3A;true</li>
+</ul>
+<h2 id="batchinator">Batchinator</h2>
+<pre><code>class Widget extends React.Component {
+  constructor(props) {
+    super(props);
+    this._batchedSave = new Batchinator(() =&gt; this._saveState(), 1000);
+  }
+
+  _saveState() {
+    // save this.state to disk
+  }
+
+  componentDidUpdate() {
+    this._batchedSave.schedule();
+  }
+
+  componentWillUnmount() {
+    this._batchedSave.dispose();
+  }
+
+}
+</code></pre><p>&#x5177;&#x4F53;&#x770B;schedule&#x65B9;&#x6CD5;</p>
+<ul>
+<li>&#x8C03;&#x7528;setTimeout</li>
+<li>timeout&#x7684;callback&#x4E3A;InteractionManager.runAfterInteractions&#xFF0C;task&#x5185;&#x4F1A;&#x56DE;&#x8C03;Batchinator&#x4F20;&#x5165;&#x7684;callback</li>
+</ul>
+<h2 id="jseventloopwatchdog">JSEventLoopWatchdog</h2>
+<p>install&#x903B;&#x8F91;</p>
+<ul>
+<li>&#x5B9A;&#x4E49;iteration&#x51FD;&#x6570;<ul>
+<li>&#x83B7;&#x53D6;busyTime&#xFF0C;&#x8FD9;&#x4E2A;&#x4E3A;&#x4E00;&#x6B21;setTimeout(iteration, thresholdMS / 5)&#x7684;&#x65F6;&#x95F4;</li>
+<li>&#x82E5;busyTime&#x5927;&#x4E8E;thresholdMS&#xFF0C;&#x5219;&#x8BA4;&#x4E3A;&#x662F;&#x5361;&#x987F;<ul>
+<li>&#x904D;&#x5386;handlers&#xFF0C;&#x8C03;&#x7528;onStall&#x51FD;&#x6570;&#xFF0C;&#x8FDB;&#x884C;&#x5361;&#x987F;&#x56DE;&#x8C03;</li>
+</ul>
+</li>
+<li>&#x904D;&#x5386;handlers&#xFF0C;&#x5E76;&#x4E14;&#x8C03;&#x7528;handler&#x7684;onIterate&#x51FD;&#x6570;</li>
+<li>setTimeout(iteration, thresholdMS / 5);</li>
+</ul>
+</li>
+<li>&#x8C03;&#x7528;iteration&#x51FD;&#x6570;</li>
+</ul>
+<p>BridgeSpyStallHandler</p>
+<p>&#x8BBE;&#x7F6E;MessageQueue&#x7684;spy&#xFF0C;spy&#x7684;&#x5B9E;&#x73B0;&#x662F;&#x5728;enqueueNativeCall/__callFunction&#x8FDB;&#x884C;&#x8C03;&#x7528;</p>
+<p>&#x5F53;spy&#x8C03;&#x7528;&#x65F6;&#x4F1A;&#x628A;&#x6B64;&#x6B21;&#x8C03;&#x7528;&#x52A0;&#x5165;spyBuffer</p>
+<p>JSEventLoopWatchdog&#x589E;&#x52A0;handler&#xFF0C;onIterate&#x65F6;&#x4F1A;&#x628A;spyBuffer&#x6E05;&#x7A7A;&#xFF0C;&#x5728;onStall&#x5219;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x5C55;&#x793A;&#x5361;&#x987F;&#x65F6;&#x76F8;&#x5173;&#x7684;bridge&#x8C03;&#x7528;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../timer/timer.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Timer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Interaction","level":"1.2.7","depth":2,"next":{"title":"第二章 ReactNative的包","level":"1.3","depth":1,"ref":"","articles":[{"title":"metro","level":"1.3.1","depth":2,"path":"article/metro/metro.md","ref":"article/metro/metro.md","articles":[]},{"title":"cli","level":"1.3.2","depth":2,"path":"article/cli/cli.md","ref":"article/cli/cli.md","articles":[]},{"title":"sourcemap","level":"1.3.3","depth":2,"path":"article/sourcemap/sourcemap.md","ref":"article/sourcemap/sourcemap.md","articles":[]}]},"previous":{"title":"Timer","level":"1.2.6","depth":2,"path":"article/timer/timer.md","ref":"article/timer/timer.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"article/interaction/interaction.md","mtime":"2025-08-01T15:56:55.181Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-09-24T13:00:58.082Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

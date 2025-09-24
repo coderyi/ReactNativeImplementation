@@ -1,0 +1,672 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>cli · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../sourcemap/sourcemap.html" />
+    
+    
+    <link rel="prev" href="../metro/metro.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ReactNative框架的设计与实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章 ReactNative的运行时
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../bundle/bundle.html">
+            
+                <a href="../bundle/bundle.html">
+            
+                    
+                    Native运行时Bundle处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../API/API.html">
+            
+                <a href="../API/API.html">
+            
+                    
+                    Native API的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html">
+            
+                    
+                    Bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../JSI/JSI.html">
+            
+                <a href="../JSI/JSI.html">
+            
+                    
+                    JSI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../AppRegistry/AppRegistry.html">
+            
+                <a href="../AppRegistry/AppRegistry.html">
+            
+                    
+                    JS侧的AppRegistry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../timer/timer.html">
+            
+                <a href="../timer/timer.html">
+            
+                    
+                    Timer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../interaction/interaction.html">
+            
+                <a href="../interaction/interaction.html">
+            
+                    
+                    Interaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第二章 ReactNative的包
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../metro/metro.html">
+            
+                <a href="../metro/metro.html">
+            
+                    
+                    metro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="cli.html">
+            
+                <a href="cli.html">
+            
+                    
+                    cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../sourcemap/sourcemap.html">
+            
+                <a href="../sourcemap/sourcemap.html">
+            
+                    
+                    sourcemap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章 ReactNative的渲染层
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../view/view.html">
+            
+                <a href="../view/view.html">
+            
+                    
+                    ReactNative的View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../render/render.html">
+            
+                <a href="../render/render.html">
+            
+                    
+                    渲染器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第四章 ReactNative的API和组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../RCTNetwork/RCTNetwork.html">
+            
+                <a href="../RCTNetwork/RCTNetwork.html">
+            
+                    
+                    RCTNetwork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../VirtualizedList/VirtualizedList.html">
+            
+                <a href="../VirtualizedList/VirtualizedList.html">
+            
+                    
+                    VirtualizedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第五章 常见的三方库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../CRN/CRN.html">
+            
+                <a href="../CRN/CRN.html">
+            
+                    
+                    CRN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../FlashList/FlashList.html">
+            
+                <a href="../FlashList/FlashList.html">
+            
+                    
+                    RecyclerListView和FlashList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >cli</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cli">cli</h1>
+<p>react-native-community/cli v6.4.0</p>
+<p>&#x5165;&#x53E3;&#x51FD;&#x6570;&#x662F;index.ts&#x7684;run&#x51FD;&#x6570;&#xFF0C;&#x8C03;&#x7528;&#x8DEF;&#x5F84;&#x5982;&#x4E0B;&#xFF0C;
+run-&gt;setupAndRun -&gt; attachCommand &#x89E3;&#x6790;&#x547D;&#x4EE4;&#xFF0C;&#x540C;&#x65F6;&#x652F;&#x6301;metroCommands</p>
+<h2 id="&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</h2>
+<ul>
+<li>start&#xFF0C;&#x542F;&#x52A8;&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;</li>
+<li>bundle &#x6253;&#x5305;&#x547D;&#x4EE4;</li>
+<li>ram-bundle ram bundle &#x6253;&#x5305;&#x547D;&#x4EE4;</li>
+<li>init &#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x5DE5;&#x7A0B;&#xFF0C;&#x8BE6;&#x89C1;init.ts&#x7684;createProject</li>
+<li>run-android&#xFF0C;&#x8FD0;&#x884C;android</li>
+<li>build-android&#xFF0C;build android&#x9879;&#x76EE;</li>
+<li>run-ios&#xFF0C;&#x8FD0;&#x884C;iOS</li>
+<li>build-ios&#xFF0C;build iOS&#x9879;&#x76EE;</li>
+<li>upgrade</li>
+<li>profile-hermes</li>
+<li>info&#xFF0C;&#x89C1;envinfo.ts&#x7684;getEnvironmentInfo&#x51FD;&#x6570;&#xFF0C;&#x8C03;&#x7528;&#x7684;&#x662F;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;tabrindle/envinfo&#xFF0C;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x7684;&#x4FE1;&#x606F;</li>
+<li>log-android</li>
+<li>log-ios</li>
+<li>clean&#xFF0C;&#x901A;&#x8FC7;yarn add @react-native-community/cli-clean &#x6DFB;&#x52A0;&#x8BE5;&#x547D;&#x4EE4;&#xFF0C;&#x6E05;&#x7406;&#x7F13;&#x5B58;&#xFF0C;&#x5305;&#x62EC;android&#xFF0C; cocoapods&#xFF0C; metro&#xFF0C; npm&#xFF0C; watchman&#xFF0C; yarn</li>
+<li>config&#xFF0C;&#x901A;&#x8FC7;yarn add @react-native-community/cli-config&#x6DFB;&#x52A0;&#x8BE5;&#x547D;&#x4EE4;</li>
+<li>doctor&#xFF0C;yarn add @react-native-community/cli-doctor</li>
+</ul>
+<h2 id="react-nativeconfigjs">react-native.config.js</h2>
+<pre><code>module.exports = {
+  project: {
+    ios: {
+      sourceDir: &apos;./custom-ios-location&apos;,
+    },
+  },
+};
+</code></pre><p>project.ios.sourceDir&#xFF0C;&#x8868;&#x793A;iOS&#x4EE3;&#x7801;&#x6240;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x5939;</p>
+<h2 id="command-&#x63D2;&#x4EF6;">command &#x63D2;&#x4EF6;</h2>
+<p>react-native.config.js &#x53EF;&#x4EE5;&#x5B9E;&#x73B0;command&#x63D2;&#x4EF6;</p>
+<pre><code>module.exports = {
+  commands: [
+    {
+      name: &apos;foo-command&apos;,
+      func: () =&gt; console.log(&apos;It worked&apos;),
+    },
+  ],
+};
+</code></pre><p>&#x7EC8;&#x7AEF;&#x8F93;&#x5165;npx react-native foo-command&#xFF0C;&#x4F1A;&#x6253;&#x5370;&#x51FA;It worked</p>
+<p>&#x7CFB;&#x7EDF;&#x8FD8;&#x6709;&#x9700;&#x8981;&#x591A;&#x63D2;&#x4EF6;&#xFF0C;&#x4EE5;config&#x4E3E;&#x4F8B;</p>
+<p>&#x5177;&#x4F53;&#x5199;&#x6CD5;&#x548C;&#x5B9E;&#x73B0;&#x5982;</p>
+<pre><code>export default {
+  name: &apos;config&apos;,
+  description: &apos;Print CLI configuration&apos;,
+  func: async (_argv: string[], ctx: Config) =&gt; {
+    console.log(JSON.stringify(filterConfig(ctx), null, 2));
+  },
+};
+</code></pre><p>command&#x7684;&#x63A5;&#x53E3;&#x5B9A;&#x4E49;</p>
+<pre><code>type Command = {
+  name: string;
+  description?: string;
+  func: (argv: Array&lt;string&gt;, config: ConfigT, args: Object) =&gt; ?Promise&lt;void&gt;;
+  options?: Array&lt;{
+    name: string;
+    description?: string;
+    parse?: (val: string) =&gt; any;
+    default?:
+      | string
+      | boolean
+      | number
+      | ((config: ConfigT) =&gt; string | boolean | number);
+  }&gt;;
+  examples?: Array&lt;{
+    desc: string;
+    cmd: string;
+  }&gt;;
+};
+</code></pre><h2 id="cli-plugin-metro-bundle">cli-plugin-metro bundle</h2>
+<p>metroCommands &#x89C1;cli-plugin-metro</p>
+<p>&#x547D;&#x4EE4;&#x5B9A;&#x4E49;</p>
+<pre><code>export default {
+  name: &apos;bundle&apos;,
+  description: &apos;builds the javascript bundle for offline use&apos;,
+  func: bundleWithOutput,
+  options: bundleCommandLineArgs,
+  // Used by `ramBundle.js`
+  withOutput: bundleWithOutput,
+};
+
+const withOutput = bundleWithOutput;
+
+export {withOutput};
+</code></pre><p>bundleWithOutput-&gt;buildBundle-&gt;buildBundleWithConfig</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x8C03;&#x7528;metro&#x7684;&#x6253;&#x5305;&#x64CD;&#x4F5C;</p>
+<pre><code>    const bundle = await output.build(server, requestOpts);
+
+    await output.save(bundle, args, logger.info);
+
+    // Save the assets of the bundle
+    const outputAssets: AssetData[] = await server.getAssets({
+      ...Server.DEFAULT_BUNDLE_OPTIONS,
+      ...requestOpts,
+      bundleType: &apos;todo&apos;,
+    });
+
+    // When we&apos;re done saving bundle output and the assets, we&apos;re done.
+    return await saveAssets(outputAssets, args.platform, args.assetsDest);
+</code></pre><h2 id="cli-plugin-metro-ram-bundle">cli-plugin-metro ram-bundle</h2>
+<pre><code>export default {
+  name: &apos;ram-bundle&apos;,
+  description:
+    &apos;builds javascript as a &quot;Random Access Module&quot; bundle for offline use&apos;,
+  func: ramBundle,
+  options: bundleCommandLineArgs.concat({
+    name: &apos;--indexed-ram-bundle&apos;,
+    description:
+      &apos;Force the &quot;Indexed RAM&quot; bundle file format, even when building for android&apos;,
+    default: false,
+  }),
+};
+</code></pre><p>&#x4E3B;&#x8981;&#x6DFB;&#x52A0;&#x4E86;--indexed-ram-bundle&#x53C2;&#x6570;</p>
+<h2 id="cli-plugin-metro-start">cli-plugin-metro start</h2>
+<pre><code>export default {
+  name: &apos;start&apos;,
+  func: runServer,
+  description: &apos;starts the webserver&apos;,
+};
+</code></pre><p>&#x8BE5;&#x547D;&#x4EE4;&#x5B9E;&#x73B0;&#x5728;cli-plugin-metro &#x7684;commands/start&#x6587;&#x4EF6;&#x5939;&#x7684;runServer&#x51FD;&#x6570;</p>
+<ul>
+<li>loadMetroConfig&#xFF0C;&#x8C03;&#x7528;metro-config&#x7684;loadConfig</li>
+<li>metroConfig.transformer.assetPlugins &#x8D4B;&#x503C;</li>
+<li>createDevServerMiddleware&#xFF0C;&#x5B9E;&#x73B0;&#x5728;cli-server-api</li>
+<li>metroConfig.server.enhanceMiddleware&#x8D4B;&#x503C;</li>
+<li>Metro.runServer</li>
+<li>attachToServer</li>
+</ul>
+<h2 id="cli-server-api">cli-server-api</h2>
+<p>createDevServerMiddleware</p>
+<ul>
+<li>connect&#x51FD;&#x6570;&#x8C03;&#x7528;</li>
+<li>&#x8FD4;&#x56DE;attachToServer&#x51FD;&#x6570;</li>
+</ul>
+<h2 id="auto-linking">auto-linking</h2>
+<p>&#x5BF9;&#x5E94;&#x4F9D;&#x8D56;Native&#x7684;&#x4EE3;&#x7801;&#xFF0C;rn &#x63D0;&#x4F9B;auto-linking&#x529F;&#x80FD;&#xFF0C;&#x5728;&#x6267;&#x884C;pod install&#x4F1A;&#x81EA;&#x52A8;&#x7684;&#x94FE;&#x63A5;&#x5230;&#x5BF9;&#x5E94;&#x7684;native&#x4EE3;&#x7801;</p>
+<p>&#x6E90;&#x7801;&#x89C1;packages/platform-ios/native_modules.rb use_native_modules&#x51FD;&#x6570;&#x7684;found_pods&#x90E8;&#x5206;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../metro/metro.html" class="navigation navigation-prev " aria-label="Previous page: metro">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../sourcemap/sourcemap.html" class="navigation navigation-next " aria-label="Next page: sourcemap">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"cli","level":"1.3.2","depth":2,"next":{"title":"sourcemap","level":"1.3.3","depth":2,"path":"article/sourcemap/sourcemap.md","ref":"article/sourcemap/sourcemap.md","articles":[]},"previous":{"title":"metro","level":"1.3.1","depth":2,"path":"article/metro/metro.md","ref":"article/metro/metro.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"article/cli/cli.md","mtime":"2025-08-01T16:22:53.637Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-09-24T13:00:58.082Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

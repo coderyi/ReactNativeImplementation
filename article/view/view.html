@@ -1,0 +1,678 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ReactNative的View · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../render/render.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ReactNative框架的设计与实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章 ReactNative的运行时
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../bundle/bundle.html">
+            
+                <a href="../bundle/bundle.html">
+            
+                    
+                    Native运行时Bundle处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../API/API.html">
+            
+                <a href="../API/API.html">
+            
+                    
+                    Native API的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html">
+            
+                    
+                    Bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../JSI/JSI.html">
+            
+                <a href="../JSI/JSI.html">
+            
+                    
+                    JSI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../AppRegistry/AppRegistry.html">
+            
+                <a href="../AppRegistry/AppRegistry.html">
+            
+                    
+                    JS侧的AppRegistry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../timer/timer.html">
+            
+                <a href="../timer/timer.html">
+            
+                    
+                    Timer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../interaction/interaction.html">
+            
+                <a href="../interaction/interaction.html">
+            
+                    
+                    Interaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第二章 ReactNative的包
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../metro/metro.html">
+            
+                <a href="../metro/metro.html">
+            
+                    
+                    metro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../cli/cli.html">
+            
+                <a href="../cli/cli.html">
+            
+                    
+                    cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../sourcemap/sourcemap.html">
+            
+                <a href="../sourcemap/sourcemap.html">
+            
+                    
+                    sourcemap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章 ReactNative的渲染层
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="view.html">
+            
+                <a href="view.html">
+            
+                    
+                    ReactNative的View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../render/render.html">
+            
+                <a href="../render/render.html">
+            
+                    
+                    渲染器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第四章 ReactNative的API和组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../RCTNetwork/RCTNetwork.html">
+            
+                <a href="../RCTNetwork/RCTNetwork.html">
+            
+                    
+                    RCTNetwork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../VirtualizedList/VirtualizedList.html">
+            
+                <a href="../VirtualizedList/VirtualizedList.html">
+            
+                    
+                    VirtualizedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第五章 常见的三方库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../CRN/CRN.html">
+            
+                <a href="../CRN/CRN.html">
+            
+                    
+                    CRN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../FlashList/FlashList.html">
+            
+                <a href="../FlashList/FlashList.html">
+            
+                    
+                    RecyclerListView和FlashList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ReactNative的View</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="reactnative&#x7684;view">ReactNative&#x7684;View</h1>
+<h2 id="rctrootview">RCTRootView</h2>
+<p>RCTRootView&#x521D;&#x59CB;&#x5316;&#x6D41;&#x7A0B;</p>
+<p><img src="image.png" alt="Alt text"></p>
+<p>&#x521B;&#x5EFA;&#x4F20;&#x5165;bridge&#x548C;modulename&#xFF0C;&#x4EE5;&#x53CA;initialProperties</p>
+<ul>
+<li>modulename&#x662F;&#x521B;&#x5EFA;bridge&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8C03;&#x7528;js&#x7684;AppRegistry&#x7684;runApplication&#x65B9;&#x6CD5;&#x4F20;&#x5165;modulename</li>
+<li>initialProperties&#x901A;&#x8FC7;runApplication&#x4F20;&#x5165;JS&#xFF0C;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x8DEF;&#x7531;&#x9875;&#x9762;&#x7684;&#x914D;&#x7F6E;&#xFF0C;runApplication&#x4E4B;&#x540E;&#x4F1A;&#x8C03;&#x7528;renderApplication&#xFF0C;&#x7136;&#x540E;&#x5F00;&#x59CB;&#x8C03;&#x7528;&#x7EC4;&#x4EF6;&#x7684;&#x6E32;&#x67D3;</li>
+</ul>
+<h2 id="rctuimanager">RCTUIManager</h2>
+<p>RCTUIManager&#x5B9E;&#x73B0;&#x4E86;RCTBridgeModule&#xFF0C;&#x5176;methodQueue&#x662F;shadow queue</p>
+<p>registerRootView</p>
+<ul>
+<li>rootView&#x4FDD;&#x5B58;&#x5728;_viewRegistry map</li>
+<li>&#x521D;&#x59CB;&#x5316;RCTRootShadowView&#xFF0C;&#x4FDD;&#x5B58;&#x5230;_shadowViewRegistry</li>
+</ul>
+<p>addUIBlock</p>
+<p>&#x4FDD;&#x5B58;UI block&#x5230;_pendingUIBlocks</p>
+<p>flushUIBlocksWithCompletion&#xFF0C;&#x4ECE;shadow queue &#x5207;&#x6362;&#x5230;main queue &#x8FDB;&#x884C;mountingBlock&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x91CC;&#x4E3B;&#x8981;&#x662F;&#x904D;&#x5386;_pendingUIBlocks&#xFF0C;&#x8C03;&#x7528;&#x5176;&#x5143;&#x7D20;block</p>
+<p>batchDidComplete&#xFF0C;&#x8FD9;&#x91CC;&#x8C03;&#x7528;_layoutAndMount&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x89E6;&#x53D1;layout&#x548C;mount&#x64CD;&#x4F5C;&#xFF0C;&#x6574;&#x4E2A;&#x64CD;&#x4F5C;&#x662F;&#x88AB;&#x6D3E;&#x53D1;&#x5728;shadow queue&#x64CD;&#x4F5C;&#x7684;</p>
+<p>&#x8865;&#x5145;&#x4E00;&#x53E5;&#xFF0C;&#x6240;&#x6709;&#x5B9E;&#x73B0;batchDidComplete&#x7684;module&#x90FD;&#x4F1A;&#x88AB;RCTCxxBridge&#x8C03;&#x7528;&#x5728;&#x5BF9;&#x5E94;&#x7684;methodQueue&#xFF0C;batchDidComplete&#x662F;&#x5728;callNativeModules&#x7684;&#x6BCF;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x7ED3;&#x675F;&#x540E;&#x8C03;&#x7528;&#x7684;&#x3002;</p>
+<p>_layoutAndMount&#x7684;&#x6D41;&#x7A0B;</p>
+<ul>
+<li>_dispatchPropsDidChangeEvents&#xFF0C;&#x6D3E;&#x53D1;&#x5C5E;&#x6027;&#x5DF2;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x4E8B;&#x4EF6;&#xFF0C;&#x8FD9;&#x91CC;&#x4F1A;&#x5206;&#x522B;&#x5BF9;shadow view&#x548C;view&#x8C03;&#x7528;didSetProps&#x65B9;&#x6CD5;</li>
+<li>_dispatchChildrenDidChangeEvents&#xFF0C;&#x6D3E;&#x53D1;&#x5B50;view&#x5DF2;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x4E8B;&#x4EF6;</li>
+<li>uiManagerWillPerformLayout&#x901A;&#x77E5;&#xFF0C;&#x5373;&#x5C06;&#x5E03;&#x5C40;</li>
+<li>_rootViewTags&#x904D;&#x5386;&#xFF0C;&#x636E;&#x6B64;&#x53D6;&#x51FA;RCTRootShadowView&#xFF0C;&#x5E76;&#x4E14;&#x8C03;&#x7528;[self addUIBlock:[self uiBlockWithLayoutUpdateForRootView:rootView]]</li>
+<li>uiManagerDidPerformLayout&#x901A;&#x77E5;&#xFF0C;&#x5E03;&#x5C40;&#x5B8C;&#x6210;</li>
+<li>uiManagerWillPerformMounting&#x901A;&#x77E5;&#xFF0C;&#x5373;&#x5C06;&#x5B89;&#x88C5;</li>
+<li>flushUIBlocksWithCompletion&#xFF0C;completion&#x91CC;&#x53D1;&#x51FA;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x7684;&#x901A;&#x77E5;</li>
+</ul>
+<p>uiBlockWithLayoutUpdateForRootView&#x5E03;&#x5C40;&#x7684;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;</p>
+<ul>
+<li>&#x5BF9;&#x4F20;&#x5165;rootShadowView&#x7684;&#x8C03;&#x7528;layoutWithAffectedShadowViews</li>
+<li>&#x904D;&#x5386;&#x4E0A;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;affectedShadowViews&#xFF0C;&#x9996;&#x5148;&#x6784;&#x9020;reactTags&#x6570;&#x7EC4;&#xFF0C;&#x5143;&#x7D20;&#x4E3A;shadowView.reactTag&#xFF0C;&#x5176;&#x6B21;&#x6784;&#x9020;frameDataArray&#xFF08;RCTFrameData&#xFF09;&#x6570;&#x7EC4;&#xFF0C;&#x6570;&#x636E;&#x4ECE;affectedShadowViews&#x5143;&#x7D20;&#x7684;RCTShadowView&#x6765;</li>
+<li>&#x518D;&#x6B21;&#x904D;&#x5386;affectedShadowViews&#xFF0C;&#x8C03;&#x7528;&#x5143;&#x7D20;RCTShadowView&#x7684;onLayout&#x65B9;&#x6CD5;</li>
+<li>&#x8FD4;&#x56DE;callback<ul>
+<li>&#x904D;&#x5386;reactTags</li>
+<li>&#x901A;&#x8FC7;viewRegistry[reactTag]&#x53D6;&#x51FA;UIView</li>
+<li>&#x82E5;creatingLayoutAnimation&#xFF0C;&#x5148;&#x8C03;&#x7528;reactSetFrame&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;performAnimations&#x8C03;&#x7528;transform/opacity&#x52A8;&#x753B;</li>
+<li>&#x82E5;updatingLayoutAnimation&#xFF0C;&#x901A;&#x8FC7;performAnimations&#x6765;&#x8C03;&#x7528;reactSetFrame</li>
+<li>&#x5176;&#x4ED6;&#x60C5;&#x51B5;&#x8C03;&#x7528;view&#x7684;reactSetFrame&#xFF08;frameData.frame&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<h4 id="bridge-method">bridge method</h4>
+<p>createView&#xFF0C;&#x521B;&#x5EFA;RCTShadowView&#x3001;RCTView&#x5E76;&#x8D4B;&#x503C;&#x7ED9;RCTViewManager</p>
+<p>updateView</p>
+<p>setChildren</p>
+<ul>
+<li>RCTSetChildren&#x8C03;&#x7528;&#xFF0C;&#x4F20;&#x5165;_shadowViewRegistry<ul>
+<li>RCTSetChildren&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;containerTag&#xFF08;&#x7236;view&#xFF09;&#xFF0C;reactTags&#xFF08;&#x5B50;views&#xFF09;&#xFF0C;registry&#xFF08;shadowViewRegistry/viewRegistry&#xFF09;</li>
+<li>&#x901A;&#x8FC7;registry&#x548C;containerTag&#x53D6;&#x51FA;&#x5BF9;&#x5E94;&#x7684;container</li>
+<li>&#x4F9D;&#x6B21;&#x904D;&#x5386;reactTags&#xFF0C;&#x8C03;&#x7528;container&#x7684;insertReactSubview</li>
+</ul>
+</li>
+<li>&#x901A;&#x8FC7;addUIBlock&#x8FDB;&#x884C;&#xFF08;&#x8FD9;&#x4F1A;&#x5728;main queue&#xFF09;RCTSetChildren&#x8C03;&#x7528;&#xFF0C;&#x4F46;&#x4F20;&#x5165;&#x7684;&#x662F;viewRegistry</li>
+<li>_shadowViewsWithUpdatedChildren&#x589E;&#x52A0;_shadowViewRegistry[containerTag]</li>
+</ul>
+<p>measure&#x65B9;&#x6CD5;&#xFF0C;&#x5728;main queue&#x8C03;&#x7528;</p>
+<ul>
+<li>&#x4ECE;viewRegistry[reactTag]&#x53D6;&#x51FA;&#x5BF9;&#x5E94;UIView</li>
+<li>&#x627E;&#x5230;&#x4F20;&#x5165;view&#x7684;ReactRootView&#xFF08;&#x904D;&#x5386;superView&#xFF0C;&#x5224;&#x65AD;&#x6807;&#x51C6;reactTag.integerValue % 10 == 1&#xFF09;</li>
+<li>&#x6839;&#x636E;view&#x548C;root view &#x8F6C;&#x6362;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x5750;&#x6807;</li>
+<li>&#x8FD4;&#x56DE;&#x54CD;&#x5E94;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x5927;&#x5C0F;</li>
+</ul>
+<h2 id="rctviewmanager">RCTViewManager</h2>
+<p>RCTViewManager&#x7BA1;&#x7406;&#x7740;RCTShadowView&#x548C;&#x5BF9;&#x5E94;&#x7684;RCTView&#x3002;</p>
+<p>&#x5728;RCTUIManager&#x91CC;&#x7684;createView&#x65B9;&#x6CD5;&#x91CC;&#x9762;&#xFF0C;&#x4F1A;&#x521B;&#x5EFA;RCTShadowView&#x3001;RCTView&#x5E76;&#x8D4B;&#x503C;&#x7ED9;RCTViewManager</p>
+<p>RCTViewManager&#x7684;&#x7ED3;&#x6784;&#x56FE;</p>
+<p><img src="image-2.png" width="70%"></p>
+<h3 id="rctview">RCTView</h3>
+<p>pointerEvents</p>
+<p>js&#x4FA7;&#x7684;View&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BE5;&#x5C5E;&#x6027;&#x63A7;&#x5236;&#x5F53;&#x524D;&#x89C6;&#x56FE;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x89E6;&#x63A7;&#x4E8B;&#x4EF6;&#x7684;&#x76EE;&#x6807;&#x3002;</p>
+<ul>
+<li>auto&#xFF1A;&#x89C6;&#x56FE;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x89E6;&#x63A7;&#x4E8B;&#x4EF6;&#x7684;&#x76EE;&#x6807;&#x3002;</li>
+<li>none&#xFF1A;&#x89C6;&#x56FE;&#x4E0D;&#x80FD;&#x4F5C;&#x4E3A;&#x89E6;&#x63A7;&#x4E8B;&#x4EF6;&#x7684;&#x76EE;&#x6807;&#x3002;</li>
+<li>box-none&#xFF1A;&#x89C6;&#x56FE;&#x81EA;&#x8EAB;&#x4E0D;&#x80FD;&#x4F5C;&#x4E3A;&#x89E6;&#x63A7;&#x4E8B;&#x4EF6;&#x7684;&#x76EE;&#x6807;&#xFF0C;&#x4F46;&#x5176;&#x5B50;&#x89C6;&#x56FE;&#x53EF;&#x4EE5;&#x3002;</li>
+<li>box-only&#xFF1A;&#x89C6;&#x56FE;&#x81EA;&#x8EAB;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x89E6;&#x63A7;&#x4E8B;&#x4EF6;&#x7684;&#x76EE;&#x6807;&#xFF0C;&#x4F46;&#x5176;&#x5B50;&#x89C6;&#x56FE;&#x4E0D;&#x80FD;&#x3002;</li>
+</ul>
+<p>enum&#x5BF9;&#x5E94;native&#x7684;&#x8F6C;&#x6362;&#x5982;&#x4E0B;</p>
+<pre><code>RCT_ENUM_CONVERTER(
+    RCTPointerEvents,
+    (@{
+      @&quot;none&quot; : @(RCTPointerEventsNone),
+      @&quot;box-only&quot; : @(RCTPointerEventsBoxOnly),
+      @&quot;box-none&quot; : @(RCTPointerEventsBoxNone),
+      @&quot;auto&quot; : @(RCTPointerEventsUnspecified)
+    }),
+    RCTPointerEventsUnspecified,
+    integerValue)
+</code></pre><p>&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x89C1;hitTest</p>
+<ul>
+<li>&#x82E5;RCTPointerEventsNone&#x5219;hitTest&#x8FD4;&#x56DE;nil&#xFF0C;</li>
+<li>&#x82E5;RCTPointerEventsBoxOnly&#x5219;hitTest&#x8FD4;&#x56DE;hitView&#xFF0C;hitView&#x5373;self&#xFF08;&#x82E5;&#x4E8B;&#x4EF6;&#x70B9;&#x5728;self&#x5185;&#xFF09;&#xFF0C;</li>
+<li>&#x82E5;RCTPointerEventsBoxNone&#x5219;hitTest&#x8FD4;&#x56DE;hitSubView&#xFF0C;&#x8BE5;hitSubView&#x7684;&#x67E5;&#x627E;&#x89C4;&#x5219;&#x4E3A;&#x904D;&#x5386;sub view&#xFF0C;&#x8C03;&#x7528;sub view&#x7684;hitTest&#xFF0C;&#x547D;&#x4E2D;&#x5219;&#x8DF3;&#x51FA;&#x5FAA;&#x73AF;</li>
+<li>RCTPointerEventsUnspecified&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;hitSubview&#x6709;&#x5219;hitSubview&#xFF0C;&#x5426;&#x5219;hitView</li>
+</ul>
+<p>displayLayer&#x6D41;&#x7A0B;</p>
+<ul>
+<li>&#x82E5;useIOSBorderRendering&#x4E3A;yes&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x8BBE;&#x7F6E;&#x4F20;&#x5165;layer&#x7684;border&#x3001;coloer&#x7B49;</li>
+<li>&#x82E5;&#x4E3A;no&#x5219;<ul>
+<li>&#x8C03;&#x7528;RCTGetBorderImage&#x83B7;&#x53D6;UIImage&#x5BF9;&#x8C61;&#xFF0C;&#x4F20;&#x5165;&#x7684;&#x6709;border style&#xFF0C;size&#xFF0C;corner radius&#xFF0C;color &#x7B49;&#x7B49;</li>
+<li>&#x628A;image&#x8BBE;&#x7F6E;&#x4E3A;layer&#x7684;contents<h3 id="rctshadowview">RCTShadowView</h3>
+</li>
+</ul>
+</li>
+</ul>
+<p>insertReactSubview</p>
+<ul>
+<li>&#x63D2;&#x5165;&#x4F20;&#x5165;&#x7684;subview&#xFF08;shadow view&#xFF09;&#x5230;_reactSubviews&#x6570;&#x7EC4;&#x7684;&#x6307;&#x5B9A;index</li>
+<li>&#x5982;&#x679C;&#x975E;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x8C03;&#x7528;YGNodeInsertChild</li>
+<li>subview&#x7684;superview&#x8BBE;&#x7F6E;&#x4E3A;self</li>
+</ul>
+<p>layoutWithMinimumSize  &#x5E03;&#x5C40;&#x65B9;&#x6CD5;</p>
+<ul>
+<li>layoutWithMetrics</li>
+<li>layoutSubviewsWithContext&#xFF0C;&#x4F1A;&#x9012;&#x5F52;&#x8C03;&#x7528;layoutSubviewsWithContext&#x83B7;&#x53D6;&#x5230;&#x5BF9;&#x5E94;layout metrics</li>
+</ul>
+<h2 id="rcttouchhandler">RCTTouchHandler</h2>
+<p>RCTTouchHandler&#x63A5;&#x6536;&#x4E8B;&#x4EF6;&#x6D41;&#x7A0B;</p>
+<p><img src="image-1.png" width="50%"></p>
+<h2 id="rctcomponent">RCTComponent</h2>
+<p>RCTComponent&#x534F;&#x8BAE;&#x4E3A;&#x7EC4;&#x4EF6;&#x7684;&#x903B;&#x8F91;&#x8282;&#x70B9;&#xFF0C;ShadowView&#x548C;UIView&#x90FD;&#x4F1A;&#x9075;&#x5FAA;&#x8FD9;&#x4E2A;&#x534F;&#x8BAE;</p>
+<p>&#x4E3B;&#x8981;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;</p>
+<ul>
+<li>insert/remove/subviews/superview&#x7B49;&#x65B9;&#x6CD5;</li>
+<li>didSetProps&#x65B9;&#x6CD5;&#xFF0C;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#x8C03;&#x7528;&#xFF0C;&#x8FD9;&#x4E2A;&#x7531;&#x5177;&#x4F53;&#x7684;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x8D1F;&#x8D23;&#x5B9E;&#x73B0;&#xFF0C;&#x4EE5;Image&#x4E3A;&#x4F8B;&#x5B50;&#xFF0C;&#x8FD9;&#x91CC;&#x4F1A;&#x8C03;&#x7528;reloadImage&#x65B9;&#x6CD5;</li>
+<li>didUpdateReactSubviews&#xFF0C;&#x5B50;view&#x66F4;&#x65B0;&#x65F6;&#x8C03;&#x7528;</li>
+</ul>
+<h2 id="rctcomponentdata">RCTComponentData</h2>
+<p>RCTUIManager&#x7684;_componentDataByName&#x4FDD;&#x5B58;&#x7740;&#x7EC4;&#x4EF6;&#x540D;&#x548C;RCTComponentData&#x7684;&#x6620;&#x5C04;</p>
+<p>&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5728;RCTUIManagaer&#x8BBE;&#x7F6E;bridge&#x7684;&#x65F6;&#x5019;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;</p>
+<p>RCTComponentData&#x7684;&#x51E0;&#x4E2A;&#x4E3B;&#x8981;&#x65B9;&#x6CD5;</p>
+<ul>
+<li>createView&#xFF0C;createShadowView&#x65B9;&#x6CD5;</li>
+<li>setProps&#xFF0C;&#x904D;&#x5386;&#x5C5E;&#x6027;&#x5217;&#x8868;&#x8C03;&#x7528;propBlockForKey&#xFF0C;&#x8FD9;&#x91CC;&#x4E3B;&#x8981;&#x662F;&#x627E;&#x5230;RCTPropBlock&#xFF0C;&#x5E76;&#x4E14;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;RCTPropBlock&#x5219;&#x4F1A;&#x521B;&#x5EFA;&#xFF0C;&#x8FD9;&#x91CC;&#x5B9E;&#x73B0;&#x4E3A;createPropBlock&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x6267;&#x884C;&#x5BF9;&#x5E94;&#x7684;&#x5C5E;&#x6027;&#x7684;setter&#x65B9;&#x6CD5;</li>
+<li>viewConfig&#xFF0C;&#x8FD4;&#x56DE;propTypes&#x3001;directEvents&#x3001;bubblingEvents&#x3001;baseModuleName<ul>
+<li>propTypes&#xFF0C;&#x904D;&#x5386;&#x5BF9;&#x5E94;ViewManager&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x627E;&#x5230;RCT_EXPORT_VIEW_PROPERTY&#x5305;&#x88C5;&#x7684;&#x5C5E;&#x6027;</li>
+<li>directEvents</li>
+<li>bubblingEvents&#xFF0C;&#x5BF9;&#x5E94;&#x5C5E;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x4E3A;RCTBubblingEventBlock&#xFF0C;&#x53EF;&#x591A;&#x6B21;&#x8C03;&#x7528;&#xFF0C;&#x6BD4;&#x5982;Switch&#x7EC4;&#x4EF6;&#x5B9A;&#x4E49;&#x7684;onChange&#x5C5E;&#x6027;</li>
+<li>baseModuleName&#xFF0C;&#x5BF9;&#x5E94;&#x5C5E;&#x6027;&#x7684;&#x7C7B;&#x578B;&#x4E3A;RCTDirectEventBlock&#xFF0C;&#x53EF;&#x591A;&#x6B21;&#x8C03;&#x7528;&#xFF0C;&#x6BD4;&#x5982;Image&#x7EC4;&#x4EF6;&#x7684;onProgress&#xFF0C;onLoadStart&#xFF0C;onLoadEnd&#x7B49;</li>
+</ul>
+</li>
+</ul>
+<p>&#x5173;&#x4E8E;&#x5C5E;&#x6027;&#x8C03;&#x7528;&#xFF0C;&#x4EE5;Image&#x7EC4;&#x4EF6;&#x7684;source&#x4E3A;&#x4F8B;</p>
+<ul>
+<li>RCTUIManager flushUIBlocks&#x89E6;&#x53D1;</li>
+<li>RCTComponentData setProps</li>
+<li>&#x53D6;&#x51FA;&#x5BF9;&#x5E94;&#x7684;propBlock</li>
+<li>RCTImageView setImageSources</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="../render/render.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 渲染器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ReactNative的View","level":"1.4.1","depth":2,"next":{"title":"渲染器","level":"1.4.2","depth":2,"path":"article/render/render.md","ref":"article/render/render.md","articles":[]},"previous":{"title":"第三章 ReactNative的渲染层","level":"1.4","depth":1,"ref":"","articles":[{"title":"ReactNative的View","level":"1.4.1","depth":2,"path":"article/view/view.md","ref":"article/view/view.md","articles":[]},{"title":"渲染器","level":"1.4.2","depth":2,"path":"article/render/render.md","ref":"article/render/render.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"article/view/view.md","mtime":"2025-08-24T14:52:58.299Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-09-24T13:00:58.082Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

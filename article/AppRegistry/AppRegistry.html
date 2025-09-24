@@ -1,0 +1,616 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JS侧的AppRegistry · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../timer/timer.html" />
+    
+    
+    <link rel="prev" href="../JSI/JSI.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ReactNative框架的设计与实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章 ReactNative的运行时
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../bundle/bundle.html">
+            
+                <a href="../bundle/bundle.html">
+            
+                    
+                    Native运行时Bundle处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../API/API.html">
+            
+                <a href="../API/API.html">
+            
+                    
+                    Native API的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html">
+            
+                    
+                    Bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../JSI/JSI.html">
+            
+                <a href="../JSI/JSI.html">
+            
+                    
+                    JSI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="AppRegistry.html">
+            
+                <a href="AppRegistry.html">
+            
+                    
+                    JS侧的AppRegistry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../timer/timer.html">
+            
+                <a href="../timer/timer.html">
+            
+                    
+                    Timer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../interaction/interaction.html">
+            
+                <a href="../interaction/interaction.html">
+            
+                    
+                    Interaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第二章 ReactNative的包
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../metro/metro.html">
+            
+                <a href="../metro/metro.html">
+            
+                    
+                    metro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../cli/cli.html">
+            
+                <a href="../cli/cli.html">
+            
+                    
+                    cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../sourcemap/sourcemap.html">
+            
+                <a href="../sourcemap/sourcemap.html">
+            
+                    
+                    sourcemap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章 ReactNative的渲染层
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../view/view.html">
+            
+                <a href="../view/view.html">
+            
+                    
+                    ReactNative的View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../render/render.html">
+            
+                <a href="../render/render.html">
+            
+                    
+                    渲染器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第四章 ReactNative的API和组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../RCTNetwork/RCTNetwork.html">
+            
+                <a href="../RCTNetwork/RCTNetwork.html">
+            
+                    
+                    RCTNetwork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../VirtualizedList/VirtualizedList.html">
+            
+                <a href="../VirtualizedList/VirtualizedList.html">
+            
+                    
+                    VirtualizedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第五章 常见的三方库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../CRN/CRN.html">
+            
+                <a href="../CRN/CRN.html">
+            
+                    
+                    CRN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../FlashList/FlashList.html">
+            
+                <a href="../FlashList/FlashList.html">
+            
+                    
+                    RecyclerListView和FlashList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >JS侧的AppRegistry</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="appregitry">AppRegitry</h1>
+<p>&#x9996;&#x5148;&#x4F1A;&#x901A;&#x8FC7;Bridge&#xFF0C;&#x6CE8;&#x5165;AppRegistry&#x6A21;&#x5757;</p>
+<pre><code>BatchedBridge.registerCallableModule(&apos;AppRegistry&apos;, AppRegistry);
+</code></pre><p>RCTRootView&#x5728;init&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8C03;&#x7528;AppRegistry&#x7684;runApplication&#x51FD;&#x6570;</p>
+<p>unmountApplicationComponentAtRootTag&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x662F;native &#x5728;RCTRootContentView invalidate&#x65F6;&#x5019;&#x8C03;&#x7528;&#xFF0C;</p>
+<h2 id="registercomponent">registerComponent</h2>
+<p>&#x51FD;&#x6570;&#x5B9A;&#x4E49;</p>
+<pre><code>export type ComponentProvider = () =&gt; React$ComponentType&lt;any&gt;;
+
+registerComponent(
+  appKey: string,
+  componentProvider: ComponentProvider,
+  section?: boolean,
+): string
+</code></pre><p>Runnable&#x7684;&#x5B9A;&#x4E49;</p>
+<pre><code>export type Runnable = {
+  component?: ComponentProvider,
+  run: Function,
+  ...
+};
+</code></pre><p>runnable&#x53EF;&#x4EE5;&#x901A;&#x8FC7;registerComponent/registerRunnabl&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x6CE8;&#x518C;&#x8FDB;&#x5165;runnables</p>
+<p>registerComponent &#x6709;&#x4E09;&#x4E2A;&#x53C2;&#x6570; appKey&#xFF0C;componentProvider&#xFF0C;section&#xFF08;bool&#xFF09;</p>
+<p>&#x5728;RN App&#x7684;index.js &#x9700;&#x8981;&#x8C03;&#x7528;registerComponent</p>
+<pre><code>import {AppRegistry} from &apos;react-native&apos;;
+import App from &apos;./App&apos;;
+import {name as appName} from &apos;./app.json&apos;;
+
+AppRegistry.registerComponent(appName, () =&gt; App);
+</code></pre><p>appName&#x9700;&#x8981;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x4F20;&#x5165;&#x7684;module name &#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;&#x8FD9;&#x662F;&#x4F5C;&#x4E3A;AppRegistry&#x7684;appKey</p>
+<p>run&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;&#x662F;&#x8C03;&#x7528;renderApplication&#x51FD;&#x6570;</p>
+<h2 id="runapplication">runApplication</h2>
+<p>&#x53C2;&#x6570;</p>
+<ul>
+<li>appKey&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x8FC7;RCTRootView&#x521D;&#x59CB;&#x5316;&#x4F20;&#x5165;&#x7684;module name</li>
+<li>appParameters<ul>
+<li>rootTag&#xFF0C;RCTRootContentView&#x7684;tag</li>
+<li>initialProps&#xFF0C;RCTRootView&#x521D;&#x59CB;&#x5316;&#x4F20;&#x5165;&#x7684;&#x542F;&#x52A8;&#x53C2;&#x6570;</li>
+</ul>
+</li>
+<li>displayMode</li>
+</ul>
+<p>runApplication&#x4E3B;&#x8981;&#x662F;</p>
+<pre><code>runnables[appKey].run(appParameters, displayMode)
+</code></pre><p>runApplication&#x662F;&#x7531;native&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;RCTRootView init&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8C03;&#x7528;&#xFF0C;&#x4F20;&#x5165;moduleName&#xFF08;&#x5373;appKey&#xFF09;&#xFF0C;&#x548C;appParameters&#xFF0C;appParameters&#x5305;&#x542B;rootTag&#x548C;initialProps&#x5B57;&#x6BB5;&#xFF0C;initialProps&#x4E3A;RCTRootView init&#x65F6;&#x7684;&#x53C2;&#x6570;initialProperties</p>
+<h2 id="renderapplication">renderApplication</h2>
+<ul>
+<li>&#x521B;&#x5EFA;renderable&#x5BF9;&#x8C61;</li>
+<li>&#x7136;&#x540E;&#x6267;&#x884C;render&#x51FD;&#x6570;&#xFF0C;require(&apos;../Renderer/shims/ReactNative&apos;).render(renderable, rootTag);</li>
+</ul>
+<p>&#x5728;render&#x51FD;&#x6570;&#x524D;&#x540E;&#xFF0C;PerformanceLogger&#x4F1A;&#x8BB0;&#x5F55;&#x65F6;&#x95F4;&#x5230;renderApplication_React_render key&#x91CC;&#x9762;&#x3002;</p>
+<p>renderable&#x5BF9;&#x8C61;</p>
+<pre><code>&lt;AppContainer
+  rootTag={rootTag}
+  fabric={fabric}
+  showArchitectureIndicator={showArchitectureIndicator}
+  WrapperComponent={WrapperComponent}
+  initialProps={initialProps ?? Object.freeze({})}
+  internal_excludeLogBox={isLogBox}&gt;
+  &lt;RootComponent {...initialProps} rootTag={rootTag} /&gt;
+&lt;/AppContainer&gt;
+</code></pre><p>AppContainer&#x662F;&#x6700;&#x5916;&#x5C42;&#x7684;Component</p>
+<h2 id="reactnativerenderer">ReactNativeRenderer</h2>
+<p>&#x53C2;&#x6570;React.Component&#xFF0C;containerTag</p>
+<ul>
+<li>&#x6839;&#x636E;rootTag&#x521B;&#x5EFA;root &#x7ED3;&#x70B9;</li>
+<li>&#x8C03;&#x7528;updateContainer&#xFF0C;&#x8FD9;&#x91CC;&#x4F1A;&#x8C03;&#x7528;&#x4F20;&#x5165;App.js&#x8FDB;&#x884C;render</li>
+</ul>
+<h2 id="headless-js">Headless JS</h2>
+<p>Headless JS&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x662F;&#x4E00;&#x79CD;&#x5728;JS&#x540E;&#x53F0;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5728;&#x540E;&#x53F0;&#x540C;&#x6B65;&#x6570;&#x636E;&#x3001;&#x5904;&#x7406;&#x63A8;&#x9001;&#x901A;&#x77E5;&#x6216;&#x8005;&#x64AD;&#x653E;&#x97F3;&#x4E50;&#x3002;&#x76EE;&#x524D;&#x4EC5;&#x652F;&#x6301;Android</p>
+<pre><code>import {AppRegistry} from &apos;react-native&apos;;
+AppRegistry.registerHeadlessTask(&apos;SomeTaskName&apos;, () =&gt;
+  require(&apos;SomeTaskName&apos;),
+);
+
+module.exports = async taskData =&gt; {
+  // &#x8981;&#x505A;&#x7684;&#x4EFB;&#x52A1;
+};
+</code></pre><p>JS API </p>
+<ul>
+<li>registerHeadlessTask&#xFF0C;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;headless&#x4EFB;&#x52A1;&#xFF0C;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#x4E0D;&#x80FD;&#x5305;&#x62EC;UI&#xFF0C;&#x8C03;&#x7528;registerCancellableHeadlessTask&#x65B9;&#x6CD5;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;taskProviders map&#x5185;</li>
+<li>startHeadlessTask&#xFF0C;&#x6267;&#x884C;headless&#x4EFB;&#x52A1;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7531;Android&#x5524;&#x8D77;</li>
+</ul>
+<p>Android&#x7AEF;</p>
+<p>&#x901A;&#x8FC7;HeadlessJsTaskConfig&#x914D;&#x7F6E;&#x4EFB;&#x52A1;&#x540D;&#xFF08;&#x540C;registerHeadlessTask&#x7684;&#x540D;&#x5B57;&#xFF09;&#xFF0C;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#xFF0C;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x524D;&#x53F0;&#x8FD0;&#x884C;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../JSI/JSI.html" class="navigation navigation-prev " aria-label="Previous page: JSI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../timer/timer.html" class="navigation navigation-next " aria-label="Next page: Timer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JS侧的AppRegistry","level":"1.2.5","depth":2,"next":{"title":"Timer","level":"1.2.6","depth":2,"path":"article/timer/timer.md","ref":"article/timer/timer.md","articles":[]},"previous":{"title":"JSI","level":"1.2.4","depth":2,"path":"article/JSI/JSI.md","ref":"article/JSI/JSI.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"article/AppRegistry/AppRegistry.md","mtime":"2025-08-02T14:22:16.622Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-09-24T13:00:58.082Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

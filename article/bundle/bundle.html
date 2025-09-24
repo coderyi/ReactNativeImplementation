@@ -1,0 +1,638 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Native运行时Bundle处理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../API/API.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ReactNative框架的设计与实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章 ReactNative的运行时
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="bundle.html">
+            
+                <a href="bundle.html">
+            
+                    
+                    Native运行时Bundle处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../API/API.html">
+            
+                <a href="../API/API.html">
+            
+                    
+                    Native API的实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../bridge/bridge.html">
+            
+                <a href="../bridge/bridge.html">
+            
+                    
+                    Bridge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../JSI/JSI.html">
+            
+                <a href="../JSI/JSI.html">
+            
+                    
+                    JSI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../AppRegistry/AppRegistry.html">
+            
+                <a href="../AppRegistry/AppRegistry.html">
+            
+                    
+                    JS侧的AppRegistry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../timer/timer.html">
+            
+                <a href="../timer/timer.html">
+            
+                    
+                    Timer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../interaction/interaction.html">
+            
+                <a href="../interaction/interaction.html">
+            
+                    
+                    Interaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第二章 ReactNative的包
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../metro/metro.html">
+            
+                <a href="../metro/metro.html">
+            
+                    
+                    metro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../cli/cli.html">
+            
+                <a href="../cli/cli.html">
+            
+                    
+                    cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../sourcemap/sourcemap.html">
+            
+                <a href="../sourcemap/sourcemap.html">
+            
+                    
+                    sourcemap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章 ReactNative的渲染层
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../view/view.html">
+            
+                <a href="../view/view.html">
+            
+                    
+                    ReactNative的View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../render/render.html">
+            
+                <a href="../render/render.html">
+            
+                    
+                    渲染器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第四章 ReactNative的API和组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../RCTNetwork/RCTNetwork.html">
+            
+                <a href="../RCTNetwork/RCTNetwork.html">
+            
+                    
+                    RCTNetwork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../VirtualizedList/VirtualizedList.html">
+            
+                <a href="../VirtualizedList/VirtualizedList.html">
+            
+                    
+                    VirtualizedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第五章 常见的三方库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../CRN/CRN.html">
+            
+                <a href="../CRN/CRN.html">
+            
+                    
+                    CRN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../FlashList/FlashList.html">
+            
+                <a href="../FlashList/FlashList.html">
+            
+                    
+                    RecyclerListView和FlashList
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Native运行时Bundle处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="native&#x8FD0;&#x884C;&#x65F6;bundle&#x5904;&#x7406;">Native&#x8FD0;&#x884C;&#x65F6;Bundle&#x5904;&#x7406;</h1>
+<p>v0.67.3</p>
+<h2 id="rctsource">RCTSource</h2>
+<p>RCTSource &#x7BA1;&#x7406;bundle&#x8D44;&#x6E90;&#xFF0C;&#x901A;&#x8FC7;RCTJavaScriptLoader&#x6765;&#x52A0;&#x8F7D;&#x8D44;&#x6E90;&#xFF0C;&#x53EA;&#x662F;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x83B7;&#x53D6;source&#x8D44;&#x6E90;&#x7684;loader&#xFF0C;&#x5B9E;&#x73B0;-loadSourceForBridge:&#x534F;&#x8BAE;&#x5373;&#x53EF;&#x3002;</p>
+<p>loader&#x652F;&#x6301;&#x540C;&#x6B65;&#x548C;&#x5F02;&#x6B65;&#x8F7D;&#x5165;source&#xFF0C;&#x5F02;&#x6B65;&#x901A;&#x8FC7;RCTMultipartDataTask &#x5904;&#x7406;</p>
+<p>&#x5BF9;&#x4E8E;&#x5F02;&#x6B65;&#x7F51;&#x7EDC;&#x52A0;&#x8F7D;&#x7684;&#xFF0C;Content-Type&#x9700;&#x8981;&#x4E3A;application/javascript&#xFF0C;text/javascript&#xFF0C;application/x-metro-bytecode-bundle</p>
+<p>RCTBridge &#x652F;&#x6301;&#x518D;&#x6B21;&#x52A0;&#x8F7D;&#x5176;&#x4ED6;&#x7684;&#x5305;&#xFF0C;&#x901A;&#x8FC7;loadAndExecuteSplitBundleURL&#x65B9;&#x6CD5;</p>
+<h2 id="&#x5904;&#x7406;&#x5305;">&#x5904;&#x7406;&#x5305;</h2>
+<p>load &#x5305;&#x6709;&#x4E09;&#x79CD;&#x6A21;&#x5F0F;</p>
+<pre><code class="lang-jsx">auto reactInstance = self-&gt;_reactInstance;
+<span class="hljs-keyword">if</span> (reactInstance &amp;&amp; RCTIsBytecodeBundle(script)) {
+  UInt32 offset = <span class="hljs-number">8</span>;
+  <span class="hljs-keyword">while</span> (offset &lt; script.length) {
+    UInt32 fileLength = RCTReadUInt32LE(script, offset);
+    NSData *unit = [script subdataWithRange:NSMakeRange(offset + <span class="hljs-number">4</span>, fileLength)];
+    reactInstance-&gt;loadScriptFromString(std::make_unique&lt;NSDataBigString&gt;(unit), sourceUrlStr.UTF8String, <span class="hljs-literal">false</span>);
+    offset += ((fileLength + RCT_BYTECODE_ALIGNMENT - <span class="hljs-number">1</span>) &amp; ~(RCT_BYTECODE_ALIGNMENT - <span class="hljs-number">1</span>)) + <span class="hljs-number">4</span>;
+  }
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isRAMBundle(script)) {
+  [self-&gt;_performanceLogger markStartForTag:RCTPLRAMBundleLoad];
+  auto ramBundle = std::make_unique&lt;JSIndexedRAMBundle&gt;(sourceUrlStr.UTF8String);
+  std::unique_ptr&lt;<span class="hljs-keyword">const</span> JSBigString&gt; scriptStr = ramBundle-&gt;getStartupCode();
+  [self-&gt;_performanceLogger markStopForTag:RCTPLRAMBundleLoad];
+  [self-&gt;_performanceLogger setValue:scriptStr-&gt;size() forTag:RCTPLRAMStartupCodeSize];
+  <span class="hljs-keyword">if</span> (reactInstance) {
+    auto registry =
+        RAMBundleRegistry::multipleBundlesRegistry(std::move(ramBundle), JSIndexedRAMBundle::buildFactory());
+    reactInstance-&gt;loadRAMBundle(std::move(registry), std::move(scriptStr), sourceUrlStr.UTF8String, !<span class="hljs-keyword">async</span>);
+  }
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (reactInstance) {
+  reactInstance-&gt;loadScriptFromString(std::make_unique&lt;NSDataBigString&gt;(script), sourceUrlStr.UTF8String, !<span class="hljs-keyword">async</span>);
+} <span class="hljs-keyword">else</span> {
+  std::string methodName = <span class="hljs-keyword">async</span> ? <span class="hljs-string">&quot;loadBundle&quot;</span> : <span class="hljs-string">&quot;loadBundleSync&quot;</span>;
+  <span class="hljs-keyword">throw</span> std::logic_error(<span class="hljs-string">&quot;Attempt to call &quot;</span> + methodName + <span class="hljs-string">&quot;: on uninitialized bridge&quot;</span>);
+}
+</code></pre>
+<h2 id="ram">RAM</h2>
+<p><a href="https://www.react-native.cn/docs/ram-bundles-inline-requires" target="_blank">RAM Bundles &#x548C;&#x5185;&#x8054;&#x5F15;&#x7528;&#x4F18;&#x5316;</a></p>
+<p>&#x5728; react-native &#x6267;&#x884C; JS &#x4EE3;&#x7801;&#x4E4B;&#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x5C06;&#x4EE3;&#x7801;&#x52A0;&#x8F7D;&#x5230;&#x5185;&#x5B58;&#x4E2D;&#x5E76;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#x3002;&#x5982;&#x679C;&#x4F60;&#x52A0;&#x8F7D;&#x4E86;&#x4E00;&#x4E2A; 50MB &#x7684; bundle&#xFF0C;&#x90A3;&#x4E48;&#x6240;&#x6709;&#x7684; 50mb &#x90FD;&#x5FC5;&#x987B;&#x88AB;&#x52A0;&#x8F7D;&#x548C;&#x89E3;&#x6790;&#x624D;&#x80FD;&#x88AB;&#x6267;&#x884C;&#x3002;RAM &#x683C;&#x5F0F;&#x7684; bundle &#x5219;&#x5BF9;&#x6B64;&#x8FDB;&#x884C;&#x4E86;&#x4F18;&#x5316;&#xFF0C;&#x5373;&#x542F;&#x52A8;&#x65F6;&#x53EA;&#x52A0;&#x8F7D; 50MB &#x4E2D;&#x5B9E;&#x9645;&#x9700;&#x8981;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x9010;&#x6E10;&#x6309;&#x9700;&#x52A0;&#x8F7D;&#x66F4;&#x591A;&#x7684;&#x5305;&#x3002;</p>
+<p>&#x5728; iOS &#x4E0A;&#x4F7F;&#x7528; RAM &#x683C;&#x5F0F;&#x5C06;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7D22;&#x5F15;&#x6587;&#x4EF6;&#xFF0C;React Native &#x5C06;&#x6839;&#x636E;&#x6B64;&#x6587;&#x4EF6;&#x4E00;&#x6B21;&#x52A0;&#x8F7D;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;native&#x4FA7;&#x6765;&#x8BF4;&#x6709;&#x4E24;&#x70B9;&#xFF0C;&#x7B2C;&#x4E00;&#x6267;&#x884C;ram bundle&#x7684;&#x542F;&#x52A8;&#x4EE3;&#x7801;&#xFF0C;&#x7B2C;&#x4E8C;&#x662F;&#x63D0;&#x4F9B;nativeRequire&#x51FD;&#x6570;</p>
+<pre><code>auto ramBundle = std::make_unique&lt;JSIndexedRAMBundle&gt;(sourceUrlStr.UTF8String);
+std::unique_ptr&lt;const JSBigString&gt; scriptStr = ramBundle-&gt;getStartupCode();
+if (reactInstance) {
+  auto registry =
+      RAMBundleRegistry::multipleBundlesRegistry(std::move(ramBundle), JSIndexedRAMBundle::buildFactory());
+  reactInstance-&gt;loadRAMBundle(std::move(registry), std::move(scriptStr), sourceUrlStr.UTF8String, !async);
+}
+</code></pre><p>ram bundle &#x542F;&#x52A8;&#x4EE3;&#x7801;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x8BFB;&#x53D6;header&#xFF0C;&#x4ECE;header&#x91CC;&#x8BFB;&#x53D6;&#x542F;&#x52A8;&#x4EE3;&#x7801;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8BFB;&#x51FA;startupcode</p>
+<p>nativeRequire&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x5F15;&#x5165;&#x903B;&#x8F91;&#xFF0C;&#x89E3;&#x6790;moduleId&#x548C;bundleId&#x53C2;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x4ECE;bundleRegistry_&#x83B7;&#x53D6;&#x5230;Module &#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4ECE;m_bundles&#x83B7;&#x53D6;&#x5230;JSModulesUnbundle&#xFF0C;&#x7136;&#x540E;&#x4ECE;&#x5BF9;&#x5E94;&#x7684;Unbundle&#x4E0A;&#x83B7;&#x53D6;&#x5230;Module</p>
+<pre><code>Value JSIExecutor::nativeRequire(const Value *args, size_t count) {
+  if (count &gt; 2 || count == 0) {
+    throw std::invalid_argument(&quot;Got wrong number of args&quot;);
+  }
+
+  uint32_t moduleId = folly::to&lt;uint32_t&gt;(args[0].getNumber());
+  uint32_t bundleId = count == 2 ? folly::to&lt;uint32_t&gt;(args[1].getNumber()) : 0;
+  auto module = bundleRegistry_-&gt;getModule(bundleId, moduleId);
+
+  runtime_-&gt;evaluateJavaScript(
+      std::make_unique&lt;StringBuffer&gt;(module.code), module.name);
+  return facebook::jsi::Value();
+}
+</code></pre><h3 id="rambundleregistry">RAMBundleRegistry</h3>
+<p>&#x8D1F;&#x8D23;&#x7BA1;&#x7406;ram bundle</p>
+<ul>
+<li>&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5728;&#x8F7D;&#x5165;ram bundle&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x521D;&#x59CB;&#x5316;RAMBundleRegistry&#xFF0C;&#x6CE8;&#x5165;mainbundle&#xFF0C;key&#x4E3A;MAIN_BUNDLE_ID&#xFF08;0&#xFF09;&#xFF0C;&#x6240;&#x6709;&#x7684;bundles&#x901A;&#x8FC7;m_bundles map&#x5904;&#x7406;</li>
+<li>&#x6839;&#x636E;bundleid &#x83B7;&#x53D6;unbundle&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;moduleid&#x83B7;&#x53D6;module</li>
+<li>register bundle</li>
+</ul>
+<p>registerSegmentWithId(&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x6CE8;&#x5165;&#x5206;&#x6BB5;bundle)-&gt;registerBundle</p>
+<p>&#x5BF9;&#x4E8E;registerBundle&#x6765;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x652F;&#x6301;RAMBundleRegistry&#xFF0C;&#x5219;&#x6CE8;&#x5165;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x652F;&#x6301;&#xFF0C;&#x5219;&#x76F4;&#x63A5;evaluateJavaScript</p>
+<p>JSModulesUnbundle</p>
+<ul>
+<li>&#x6839;&#x636E;moduleid &#x83B7;&#x53D6;module</li>
+</ul>
+<p>&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x73B0;&#x662F;JSIndexedRAMBundle&#xFF0C;&#x7EE7;&#x627F;&#x81EA;JSModulesUnbundle&#xFF0C;&#x4F20;&#x5165;moduleid&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x51FA;code&#xFF0C;init&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8BFB;&#x53D6;header &#x83B7;&#x53D6; startupcode&#xFF0C;ModuleTable&#xFF08;&#x4FDD;&#x5B58;moduleid&#x548C;&#x5176;offset&#xFF09;&#xFF0C;startupcode&#xFF0C; module&#x7684;&#x4EE3;&#x7801;&#x662F;&#x4EE5;header+moduletable&#x4E3A;&#x57FA;&#x7EBF;&#x5F00;&#x59CB;&#x8BFB;&#x53D6;&#x6570;&#x636E;</p>
+<h2 id="js&#x4FA7;-nativerequire">js&#x4FA7; nativeRequire</h2>
+<p>&#x5177;&#x4F53;&#x5728;metro&#x7684;nativeRequire</p>
+<h2 id="&#x5185;&#x8054;&#x5F15;&#x7528;&#x4F18;&#x5316;">&#x5185;&#x8054;&#x5F15;&#x7528;&#x4F18;&#x5316;</h2>
+<p>&#x5185;&#x8054;&#x5F15;&#x7528;(require &#x4EE3;&#x66FF; import)&#x53EF;&#x4EE5;&#x5EF6;&#x8FDF;&#x6A21;&#x5757;&#x6216;&#x6587;&#x4EF6;&#x7684;&#x52A0;&#x8F7D;&#xFF0C;&#x76F4;&#x5230;&#x5B9E;&#x9645;&#x9700;&#x8981;&#x8BE5;&#x6587;&#x4EF6;&#x3002;&#x5373;&#x4FBF;&#x4E0D;&#x4F7F;&#x7528; RAM &#x683C;&#x5F0F;&#xFF0C;&#x5185;&#x8054;&#x5F15;&#x7528;&#x4E5F;&#x4F1A;&#x4F7F;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x51CF;&#x5C11;&#xFF0C;&#x56E0;&#x4E3A;&#x4F18;&#x5316;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x53EA;&#x6709;&#x5728;&#x7B2C;&#x4E00;&#x6B21; require &#x65F6;&#x624D;&#x4F1A;&#x6267;&#x884C;&#x3002;</p>
+<p><a href="https://blog.logrocket.com/whats-new-in-react-native-0-64/#inlinerequiresenabledbydefault" target="_blank">https://blog.logrocket.com/whats-new-in-react-native-0-64/#inlinerequiresenabledbydefault</a></p>
+<pre><code class="lang-jsx"><span class="hljs-comment">// Before</span>
+<span class="hljs-keyword">import</span> { TestFunction } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;test-module&apos;</span>;
+
+<span class="hljs-keyword">const</span> TestComponent = (props) =&gt; {
+  <span class="hljs-keyword">const</span> result = TestFunction();
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>{result}<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span></span>;
+};
+
+<span class="hljs-comment">//After</span>
+<span class="hljs-keyword">const</span> TestComponent = (props) =&gt; {
+  <span class="hljs-keyword">const</span> result = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;test-module&apos;</span>).TestFunction();
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>{result}<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span></span>;
+};
+</code></pre>
+<p>&#x5F00;&#x542F;inline&#x5728;metro.config.js</p>
+<pre><code>module.exports = {
+  transformer: {
+    getTransformOptions: async () =&gt; ({
+      transform: {
+        experimentalImportSupport: false,
+        inlineRequires: true,
+      },
+    }),
+  }
+}
+</code></pre><h2 id="&#x6253;&#x5305;">&#x6253;&#x5305;</h2>
+<p>&#x6253;&#x5305;&#x547D;&#x4EE4;</p>
+<p>npx react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios/</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="../API/API.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Native API的实现">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Native运行时Bundle处理","level":"1.2.1","depth":2,"next":{"title":"Native API的实现","level":"1.2.2","depth":2,"path":"article/API/API.md","ref":"article/API/API.md","articles":[]},"previous":{"title":"第一章 ReactNative的运行时","level":"1.2","depth":1,"ref":"","articles":[{"title":"Native运行时Bundle处理","level":"1.2.1","depth":2,"path":"article/bundle/bundle.md","ref":"article/bundle/bundle.md","articles":[]},{"title":"Native API的实现","level":"1.2.2","depth":2,"path":"article/API/API.md","ref":"article/API/API.md","articles":[]},{"title":"Bridge","level":"1.2.3","depth":2,"path":"article/bridge/bridge.md","ref":"article/bridge/bridge.md","articles":[]},{"title":"JSI","level":"1.2.4","depth":2,"path":"article/JSI/JSI.md","ref":"article/JSI/JSI.md","articles":[]},{"title":"JS侧的AppRegistry","level":"1.2.5","depth":2,"path":"article/AppRegistry/AppRegistry.md","ref":"article/AppRegistry/AppRegistry.md","articles":[]},{"title":"Timer","level":"1.2.6","depth":2,"path":"article/timer/timer.md","ref":"article/timer/timer.md","articles":[]},{"title":"Interaction","level":"1.2.7","depth":2,"path":"article/interaction/interaction.md","ref":"article/interaction/interaction.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"article/bundle/bundle.md","mtime":"2025-08-02T14:22:39.787Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-09-24T13:00:58.082Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
